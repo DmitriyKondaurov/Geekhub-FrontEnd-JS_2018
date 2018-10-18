@@ -1,0 +1,44 @@
+body {
+  font: 300 12px/18px "Comic Sans MS", sans-serif;
+}
+
+.wrapper {
+  width: 460px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input {
+  width: 300px;
+}
+
+.footnote {
+  padding-left: 110px;
+}
+
+.footnote_chbox {
+  width: auto;
+  margin: 3px 3px 45px 3px;
+  float: left;
+  overflow: hidden;
+}
+
+.footnote_lable {
+  width: auto;
+}
+
+.about_me {
+  vertical-align: top;
+}

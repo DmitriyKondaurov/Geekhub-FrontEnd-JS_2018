@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Kondaurov Dmytro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="wrapper">
+    <h1>Profile edit page</h1>
+    <form action="#">
+        <fieldset>
+            <legend>Basic info</legend>
+            <ul>
+                <li><label for="id">ID</label><input type="text" name="id" id="id" value="725" disabled></li>
+                <li><label for="f_name">First Name</label><input type="text" name="f_name" id="f_name"></li>
+                <li><label for="l_name">Last Name</label><input type="text" name="l_name" id="l_name"></li>
+                <li><label for="pass">Password</label><input type="password" name="pass" id="pass"
+                                                             placeholder="**********"></li>
+                <li><label for="tel">Phone</label><input type="tel" name="tel" id="tel" placeholder="380"></li>
+                <li><label for="email">Email</label><input type="email" name="email" id="email"
+                                                           placeholder="myemail@placeholder.com"></li>
+                <li class="footnote"><input class="footnote_chbox" type="checkbox" name="priv_email"
+                                            id="priv_email"> <label class="footnote_lable" for="priv_email">Keep my
+                    email address
+                                                                    private</label>
+                    <div>We'll remote your public profile email and use 1978334+username@usersnoreplylocalhost</div>
+                </li>
+                <li><label for="date_birth">DOB</label><input type="date" name="date_birth" id="date_birth"></li>
+                <li><label for="blog_url">Blog url</label><input type="url" name="blog_url" id="blog_url"
+                                                                 placeholder="http://"></li>
+                <li><label for="about" class="about_me">About me</label>
+                    <textarea id="about" name="about" cols="35" rows="7"></textarea>
+                </li>
+                <li><label for="pic">Profile picture</label><input type="file" accept="image/*" name="pic" id="pic"
+                                                                   value="Choose the file"></li>
+            </ul>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</div>
 
 </body>
 </html>
