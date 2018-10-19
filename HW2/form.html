@@ -12,31 +12,133 @@
         <fieldset>
             <legend>Basic info</legend>
             <ul>
-                <li><label for="id">ID</label><input type="text" name="id" id="id" value="725" disabled></li>
-                <li><label for="f_name">First Name</label><input type="text" name="f_name" id="f_name"></li>
-                <li><label for="l_name">Last Name</label><input type="text" name="l_name" id="l_name"></li>
-                <li><label for="pass">Password</label><input type="password" name="pass" id="pass"
-                                                             placeholder="**********"></li>
-                <li><label for="tel">Phone</label><input type="tel" name="tel" id="tel" placeholder="380"></li>
-                <li><label for="email">Email</label><input type="email" name="email" id="email"
-                                                           placeholder="myemail@placeholder.com"></li>
-                <li class="footnote"><input class="footnote_chbox" type="checkbox" name="priv_email"
-                                            id="priv_email"> <label class="footnote_lable" for="priv_email">Keep my
-                    email address
-                                                                    private</label>
+                <li>
+                    <label for="id">ID</label>
+                    <input type="text" name="id" id="id" value="725" disabled>
+                </li>
+                <li>
+                    <label for="f_name">First Name</label>
+                    <input type="text" name="f_name" id="f_name" required>
+                </li>
+                <li>
+                    <label for="l_name">Last Name</label>
+                    <input type="text" name="l_name" id="l_name" required>
+                </li>
+                <li>
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass" placeholder="**********" required>
+                </li>
+                <li>
+                    <label for="tel">Phone</label>
+                    <input type="tel" name="tel" id="tel" placeholder="380" required>
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="myemail@placeholder.com" required>
+                </li>
+                <li class="footnote">
+                    <input class="footnote_chbox" type="checkbox" name="priv_email" id="priv_email">
+                    <label class="footnote_lable" for="priv_email">Keep my email address private</label>
                     <div>We'll remote your public profile email and use 1978334+username@usersnoreplylocalhost</div>
                 </li>
-                <li><label for="date_birth">DOB</label><input type="date" name="date_birth" id="date_birth"></li>
-                <li><label for="blog_url">Blog url</label><input type="url" name="blog_url" id="blog_url"
-                                                                 placeholder="http://"></li>
-                <li><label for="about" class="about_me">About me</label>
-                    <textarea id="about" name="about" cols="35" rows="7"></textarea>
+                <li>
+                    <label for="date_birth">DOB</label>
+                    <input type="date" name="date_birth" id="date_birth" required>
                 </li>
-                <li><label for="pic">Profile picture</label><input type="file" accept="image/*" name="pic" id="pic"
-                                                                   value="Choose the file"></li>
+                <li>
+                    <label for="blog_url">Blog url</label>
+                    <input type="url" name="blog_url" id="blog_url" placeholder="http://" required>
+                </li>
+                <li>
+                    <label for="about" class="about_me">About me</label>
+                    <textarea id="about" name="about" cols="35" rows="7" required></textarea>
+                </li>
+                <li>
+                    <label for="pic">Profile picture</label>
+                    <input type="file" accept="image/*" name="pic" id="pic" required>
+                </li>
             </ul>
         </fieldset>
-        <button type="submit">Submit</button>
+        <fieldset>
+            <legend>Professional info</legend>
+            <ul>
+                <li>
+                    <label for="st_desire">Desire to study</label>
+                    <input type="range" name="st_desire" id="st_desire" value="75">
+                </li>
+                <li>
+                    <label for="exp_years">Experience</label>
+                    <input class="exp_years" type="number" step="1" id="exp_years" name="exp_years" min="0" max="30"
+                           value="3">
+                    <span>years</span>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Development Experience</dt>
+                        <dd>
+                            <input type="radio" name="dev-exp" class="dev_exp" value="learning" id="dev_exp_learning">
+                            <label for="dev_exp_learning">Learning to Program</label>
+                        </dd>
+                        <dd>
+                            <input type="radio" name="dev-exp" class="dev_exp" value="junior" id="dev_exp_junior"
+                                   checked>
+                            <label for="dev_exp_junior">Junior Developer</label>
+                        </dd>
+                        <dd>
+                            <input type="radio" name="dev-exp" class="dev_exp" value="mid" id="dev_exp_mid">
+                            <label for="dev_exp_mid">Mid-Level Developer</label>
+                        </dd>
+                        <dd>
+                            <input type="radio" name="dev-exp" class="dev_exp" value="senior" id="dev_exp_senior">
+                            <label for="dev_exp_senior">Senior Developer</label>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <label for="country">Country</label>
+                    <select name="country" id="country" required>
+                        <option value="placeholder" disabled selected hidden>- Choose Your Country -</option>
+                        <option value="uk">Ukraine</option>
+                        <option value="usa">USA</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="spain">Spain</option>
+                    </select>
+                </li>
+                <li>
+                    <dl>
+                        <dt>Skills</dt>
+                        <dd>
+                            <input type="checkbox" name="skill_html" class="skills" id="skill_html" checked>
+                            <label for="skill_html">HTML</label>
+                        </dd>
+                        <dd>
+                            <input type="checkbox" name="skill_CSS" class="skills" id="skill_CSS">
+                            <label for="skill_CSS">CSS</label>
+                        </dd>
+                        <dd>
+                            <input type="checkbox" name="skill_JS" class="skills" id="skill_JS">
+                            <label for="skill_JS">JavaScript</label>
+                        </dd>
+                        <dd>
+                            <input type="checkbox" name="skill_R" class="skills" id="skill_R">
+                            <label for="skill_R">R</label>
+                        </dd>
+                        <dd>
+                            <input type="checkbox" name="skill_Scala" class="skills" id="skill_Scala">
+                            <label for="skill_Scala">Scala</label>
+                        </dd>
+                        <dd>
+                            <input type="checkbox" name="skill_Haskell" class="skills" id="skill_Haskell">
+                            <label for="skill_Haskell">Haskell</label>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </fieldset>
+        <div class="submit">
+            <a href="#">< Cancel</a>
+            <button type="submit">Submit</button>
+        </div>
     </form>
 </div>
 

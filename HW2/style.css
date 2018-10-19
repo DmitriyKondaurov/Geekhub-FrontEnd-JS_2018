@@ -6,6 +6,10 @@ body {
   width: 460px;
 }
 
+h1 {
+  text-align: center;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -20,7 +24,20 @@ label {
   width: 100px;
 }
 
-input {
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.dev_exp + label, .skills {
+  width: auto;
+}
+
+input, select {
   width: 300px;
 }
 
@@ -35,10 +52,23 @@ input {
   overflow: hidden;
 }
 
-.footnote_lable {
+.footnote_lable, .exp_years, .dev_exp {
   width: auto;
+}
+
+.dev_exp, .skills {
+  margin-left: 65px;
 }
 
 .about_me {
   vertical-align: top;
+}
+
+.submit {
+  padding: 10px;
+  text-align: end;
+}
+
+[type=submit] {
+  margin: 0 10px;
 }
