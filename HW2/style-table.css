@@ -1,4 +1,21 @@
-table, tr, th, td {
-  border: 1px solid black;
+table, th, td {
+  /*border: 1px solid black;*/
   border-collapse: collapse;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+}
+
+td {
+  font: 300 12px/18px Arial, sans-serif;
+}
+
+.phys_tr {
+  letter-spacing: 5px;
+  word-spacing: 20px;
+}
+
+.t_foot {
+  text-align: left;
+  font-size: 10px;
 }
