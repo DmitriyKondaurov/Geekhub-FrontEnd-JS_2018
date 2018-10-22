@@ -33,6 +33,10 @@ a {
   color: black;
 }
 
+h4 {
+  font-weight: 300;
+}
+
 .dev_exp + label, .skills {
   width: auto;
 }
@@ -71,4 +75,17 @@ input, select {
 
 [type=submit] {
   margin: 0 10px;
+}
+
+.list-of-param li {
+  padding: 0;
+}
+
+.cancel-btn {
+  background: none;
+  border: none;
+}
+
+.cancel-btn:hover {
+  cursor: pointer;
 }
