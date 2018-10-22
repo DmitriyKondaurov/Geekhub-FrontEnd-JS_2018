@@ -1,0 +1,91 @@
+body {
+  font: 300 12px/18px "Comic Sans MS", sans-serif;
+}
+
+.wrapper {
+  width: 460px;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+.dev_exp + label, .skills {
+  width: auto;
+}
+
+input, select {
+  width: 300px;
+}
+
+.footnote {
+  padding-left: 110px;
+}
+
+.footnote_chbox {
+  width: auto;
+  margin: 3px 3px 45px 3px;
+  float: left;
+  overflow: hidden;
+}
+
+.footnote_lable, .exp_years, .dev_exp {
+  width: auto;
+}
+
+.dev_exp, .skills {
+  margin-left: 65px;
+}
+
+.about_me {
+  vertical-align: top;
+}
+
+.submit {
+  padding: 10px;
+  text-align: end;
+}
+
+[type=submit] {
+  margin: 0 10px;
+}
+
+.list-of-param li {
+  padding: 0;
+}
+
+.cancel-btn {
+  background: none;
+  border: none;
+}
+
+.cancel-btn:hover {
+  cursor: pointer;
+}
