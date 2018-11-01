@@ -1,4 +1,26 @@
 .sass-cache/
 *.css.map
+*.sass.map
+*.scss.map
 .idea/
 
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*/node_modules/
+*/jspm_packages/
+
+# Output of 'npm pack'
+*.tgz
+# Optional npm cache directory
+.npm
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
