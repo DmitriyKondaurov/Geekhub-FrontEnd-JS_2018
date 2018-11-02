@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Conv_9151';
+  src: url('../fonts/9151.eot');
+  src: local('☺'), url('../fonts/9151.woff') format('woff'), url('../fonts/9151.ttf') format('truetype'), url('../fonts/9151.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body  {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 70px;
+  width: 250px;
+  margin: 0;
+}
+
+.logo-caption {
+  display: block;
+  padding-top: 15px;
+  font: 400 44px/44px 'Conv_9151', sans-serif;
+  letter-spacing: 3px;
+}
+
+.logo-name {
+  display: block;
+  margin-top: -5px;
+  font: 400 14px/14px 'Roboto', sans-serif;
+}
+
+.logo-img {
+  display: block;
+  float: left;
+  overflow: hidden;
+}
