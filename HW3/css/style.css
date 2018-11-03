@@ -189,9 +189,10 @@ display: none;
           radial-gradient(circle at 0 100%, rgba(221,73,42,0) 9px, #4c4c4c 10px);
 }
 
-.event_date.active {
+.event_date.active, .event_date:hover {
   width: 92px;
   height: 92px;
+  cursor: pointer;
   background:
           linear-gradient(135deg, transparent 10px, #dd492a 0) top left,
           linear-gradient(225deg, transparent 10px, #dd492a 0) top right,
@@ -222,16 +223,23 @@ display: none;
   position: absolute;
   bottom: 10px;
   right: 55px;
-  display: inline-block;
+  display: block;
   width: 115px;
   height: 25px;
-  background-image: linear-gradient(to top, #4c4c4c, #505050);
+  background-color: #505050;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
   line-height: 25px;
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 11px;
+}
+
+.call-to-action-btn:hover {
+  color: rgba(0, 0, 0, 1);
+  background-color: #fff;
+  box-shadow: 0 0 15px;
+  text-shadow: 0 0 2px;
 }
 
 .event_text-about {
@@ -283,7 +291,6 @@ display: none;
 
 .left-nav_item {
   padding: 7px 0;
-  background-image: url();
   text-transform: uppercase;
   vertical-align: middle;
   font: 100 19px/26px Roboto, sans-serif;
