@@ -1,4 +1,7 @@
 
+/*_____________________________________________*/
+/*Font for logo*/
+/*_________________________________________________*/
 
 @font-face {
   font-family: 'Conv_9151';
@@ -7,6 +10,63 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/*_________________________________________*/
+/*ICONS*/
+/*____________________________________________*/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/fonts/icomoon.eot?rb6m9k');
+  src:  url('../fonts/icomoon/fonts/icomoon.eot?rb6m9k#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon/fonts/icomoon.ttf?rb6m9k') format('truetype'),
+  url('../fonts/icomoon/fonts/icomoon.woff?rb6m9k') format('woff'),
+  url('../fonts/icomoon/fonts/icomoon.svg?rb6m9k#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: 'icomoon';
+  speak: none;
+  display: inline-block;
+  width: 45px;
+  height: 26px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-photo:before {
+  content: "\e900";
+  font-size: 23px;
+}
+.icon-cam:before {
+  content: "\e904";
+  font-size: 26px;
+}
+.icon-care:before {
+  content: "\e903";
+  font-size: 26px;
+}
+.icon-deal:before {
+  content: "\e901";
+  font-size: 25px;
+}
+.icon-chat:before {
+  content: "\e902";
+  font-size: 23px;
+}
+
+/*___________________________________________*/
+/*General style */
+/*_____________________________________________*/
 
 body  {
   font: 400 12px/14px 'Roboto', sans-serif;
@@ -23,6 +83,11 @@ a {
   text-decoration: none;
 }
 
+/*______________________________________________*/
+/*Custom style*/
+/*_____________________________________________*/
+/*HEADER*/
+/*_______________________________________________*/
 .header {
   position: fixed;
   z-index: 2;
@@ -105,6 +170,10 @@ a {
 .lang-switch:after {
   content: "\25be";
 }
+
+/*______________________________________________*/
+/*HERO*/
+/*_______________________________________________*/
 
 .hero {
 position: relative;
@@ -272,17 +341,21 @@ display: none;
 .main-wrapper {
   display: flex;
   margin: 0 auto;
-  width: 974px;
-  justify-content: space-between;
+  width: 980px;
+  justify-content: space-around;
   align-items: start;
 }
 
-.left-nav, .right-nav {
+.left-nav {
   flex: 0 0 235px;
 }
 
+.right-nav {
+  flex: 0 0 225px;
+}
+
 .news-line {
-  flex: 0 0 450px;
+  flex: 0 0 484px;
 }
 
 .left-nav {
@@ -299,59 +372,10 @@ display: none;
 .left-nav_item a:hover {
   color: #dd492a;
 }
-/*_________________________________________*/
-/*ICONS*/
-/*____________________________________________*/
 
-@font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon/fonts/icomoon.eot?rb6m9k');
-  src:  url('../fonts/icomoon/fonts/icomoon.eot?rb6m9k#iefix') format('embedded-opentype'),
-  url('../fonts/icomoon/fonts/icomoon.ttf?rb6m9k') format('truetype'),
-  url('../fonts/icomoon/fonts/icomoon.woff?rb6m9k') format('woff'),
-  url('../fonts/icomoon/fonts/icomoon.svg?rb6m9k#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-.icon {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon';
-  speak: none;
-  display: inline-block;
-  width: 45px;
-  height: 26px;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-photo:before {
-  content: "\e900";
-  font-size: 23px;
-}
-.icon-cam:before {
-content: "\e904";
-font-size: 26px;
-}
-.icon-care:before {
-  content: "\e903";
-  font-size: 26px;
-}
-.icon-deal:before {
-  content: "\e901";
-  font-size: 25px;
-}
-.icon-chat:before {
-  content: "\e902";
-  font-size: 23px;
-}
+/*_____________________________________________*/
+/*RIGHT SIDEBAR*/
+/*_______________________________________________*/
 
 .news-line_caption, .right-nav_item_caption {
   margin: 33px 0;
@@ -361,6 +385,7 @@ font-size: 26px;
 
 .right-nav_item {
   height: 305px;
+  margin-left: 20px;
 }
 
 .right-nav_item_text {
@@ -370,8 +395,8 @@ font-size: 26px;
   margin: 0;
   padding: 10px 12px;
   border-radius: 0 0 3px 3px;
-  color: rgba(0, 0, 0, 0.6);
-  box-shadow: 0 1px 1px;
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0.5px 0.5px;
   font: 400 14px/16px Roboto, sans-serif;
 }
 
@@ -380,7 +405,7 @@ font-size: 26px;
   position: relative;
 }
 
-.right-nav_item_text::before {
+.thumbnail-video .right-nav_item_text::before {
   content: url("../img/icons/icon-play.png");
   display: block;
   position: absolute;
@@ -390,3 +415,53 @@ font-size: 26px;
   width: 40px;
   height: 40px;
 }
+
+/*______________________________________________*/
+/*MAIN NEWS LINE*/
+/*_______________________________________________*/
+
+.news-article {
+  margin: 30px 0;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 0.5px 0.5px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.news-article_caption {
+  margin: 10px 20px;
+  color: rgba(0, 0, 0, 0.7);
+  font: 400 20px/20px Roboto, sans-serif;
+}
+
+.news-article_text {
+  box-sizing: border-box;
+  height: 50px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font: 400 14px/16px Roboto, sans-serif;
+}
+
+.article-footer {
+  border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.article-footer_date {
+  font: 400 12px/26px Roboto, sans-serif;
+}
+
+.article-footer_view::before {
+  display: inline-block;
+  padding: 5px;
+  content: url("../img/icons/eye.png");
+  vertical-align: middle;
+}
+
+/*________________________________________________*/
+/*FOOTER*/
+/*__________________________________________________*/
