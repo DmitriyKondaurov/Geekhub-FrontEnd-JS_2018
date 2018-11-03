@@ -282,7 +282,7 @@ display: none;
 }
 
 .news-line {
-  flex: 0 0 485px;
+  flex: 0 0 450px;
 }
 
 .left-nav {
@@ -351,4 +351,42 @@ font-size: 26px;
 .icon-chat:before {
   content: "\e902";
   font-size: 23px;
+}
+
+.news-line_caption, .right-nav_item_caption {
+  margin: 33px 0;
+  color: #dd492a;
+  font: 100 30px/30px Roboto, sans-serif;
+}
+
+.right-nav_item {
+  height: 305px;
+}
+
+.right-nav_item_text {
+  box-sizing: border-box;
+  height: 54px;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 0 0 3px 3px;
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 1px;
+  font: 400 14px/16px Roboto, sans-serif;
+}
+
+.thumbnail-video {
+  display: block;
+  position: relative;
+}
+
+.right-nav_item_text::before {
+  content: url("../img/icons/icon-play.png");
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
 }
