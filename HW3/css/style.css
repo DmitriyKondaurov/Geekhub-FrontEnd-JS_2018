@@ -106,13 +106,19 @@ a {
   content: "\25be";
 }
 
-.hide {
-  display: none;
+.hero {
+position: relative;
+margin-top: 60px;
 }
 
-.hero {
-  position: relative;
-  margin-top: 60px;
+.hero_carousel_event-img-item {
+  display: block;
+  margin: auto;
+  width:  100%;
+}
+
+.hide {
+display: none;
 }
 
 .hero_carousel_event-nav_left, .hero_carousel_event-nav_right {
