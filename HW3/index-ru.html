@@ -12,7 +12,7 @@
 <header class="header">
     <div class="wrapper">
         <h1 class="logo">
-            <a href="#">
+            <a href="#hero">
                 <img class="logo-img" src="img/logo.png" alt="Photo of Taras Shevchenko, famous ukrainian writer">
                 <span class="logo-caption">Театр</span>
                 <span class="logo-name">імені Т.Г.Шевченка</span>
@@ -20,14 +20,14 @@
         </h1>
         <nav class="top-nav">
             <ul class="top-nav_list">
-                <li class="top-nav_item">головна</li>
-                <li class="top-nav_item">афіша</li>
-                <li class="top-nav_item">репертуар</li>
-                <li class="top-nav_item">новини</li>
-                <li class="top-nav_item">про театр</li>
-                <li class="top-nav_item">персоналії</li>
-                <li class="top-nav_item">контакти</li>
-                <li class="top-nav_item">фестивалі</li>
+                <li class="top-nav_item"><a href="#hero">головна</a></li>
+                <li class="top-nav_item"><a href="#">афіша</a></li>
+                <li class="top-nav_item"><a href="#">репертуар</a></li>
+                <li class="top-nav_item"><a href="#news">новини</a></li>
+                <li class="top-nav_item"><a href="#">про театр</a></li>
+                <li class="top-nav_item"><a href="#">персоналії</a></li>
+                <li class="top-nav_item"><a href="#">контакти</a></li>
+                <li class="top-nav_item"><a href="#">фестивалі</a></li>
             </ul>
         </nav>
         <ul class="lang-switch">
@@ -35,76 +35,82 @@
         </ul>
     </div>
 </header>
-<section class="hero">
-    <ul class="hero_carousel">
-        <li class="hero_carousel_item-event">
-            <img class="event-img" src="img/event/event-1.png" alt="Event image">
-            <div class="event_date">
-                <div class="event_week-day">Пн</div>
-                <div class="event_day-num">22</div>
-                <div class="event_month">лютого</div>
-            </div>
-            <div class="event_main-info">
-                <h3 class="event_caption">Сад гетсиманский</h3>
-                <p class="event_text-about">Народна трагедія на 2 дії. Тривалість вистави 2 год 20 хв.
-                    <span>купити квиток</span></p>
-            </div>
-        </li>
-        <li class="hero_carousel_item-event">
-            <img class="event-img" src="img/event/event-2.png" alt="Event image">
-            <div class="event_date">
-                <div class="event_week-day">Пн</div>
-                <div class="event_day-num">22</div>
-                <div class="event_month">лютого</div>
-            </div>
-            <div class="event_main-info">
-                <h3 class="event_caption">Сад гетсиманский</h3>
-                <p class="event_text-about">Народна трагедія на 2 дії. Тривалість вистави 2 год 20 хв.
-                    <span>купити квиток</span></p>
-            </div>
-        </li>
-        <li class="hero_carousel_item-event">
-            <img class="event-img" src="img/event/event-3.png" alt="Event image">
-            <div class="event_date">
-                <div class="event_week-day">Пн</div>
-                <div class="event_day-num">22</div>
-                <div class="event_month">лютого</div>
-            </div>
-            <div class="event_main-info">
-                <h3 class="event_caption">Сад гетсиманский</h3>
-                <p class="event_text-about">Народна трагедія на 2 дії. Тривалість вистави 2 год 20 хв.
-                    <span>купити квиток</span></p>
-            </div>
-        </li>
-        <li class="hero_carousel_item-event">
-        <li class="hero_carousel_item-event">
-            <img class="event-img" src="img/event/event-4.png" alt="Event image">
-            <div class="event_date">
-                <div class="event_week-day">Пн</div>
-                <div class="event_day-num">22</div>
-                <div class="event_month">лютого</div>
-            </div>
-            <div class="event_main-info">
-                <h3 class="event_caption">Сад гетсиманский</h3>
-                <p class="event_text-about">Народна трагедія на 2 дії. Тривалість вистави 2 год 20 хв.
-                    <span>купити квиток</span></p>
-            </div>
-        </li>
-        <li class="hero_carousel_item-event">
-        <li class="hero_carousel_item-event">
-            <img class="event-img" src="img/event/event-5.png" alt="Event image">
-            <div class="event_date">
-                <div class="event_week-day">Пн</div>
-                <div class="event_day-num">22</div>
-                <div class="event_month">лютого</div>
-            </div>
-            <div class="event_main-info">
-                <h3 class="event_caption">Сад гетсиманский</h3>
-                <p class="event_text-about">Народна трагедія на 2 дії. Тривалість вистави 2 год 20 хв.
-                    <span>купити квиток</span></p>
-            </div>
-        </li>
-    </ul>
+<section class="hero" id="hero">
+    <div class="hero_carousel">
+        <ul class="hero_carousel_event-img-list">
+            <li><img class="hero_carousel_event-img-item hide" src="img/event/event-1.png" alt="Event image"></li>
+            <li><img class="hero_carousel_event-img-item hide" src="img/event/event-2.png" alt="Event image"></li>
+            <li><img class="hero_carousel_event-img-item" src="img/event/event-3.png" alt="Event image"></li>
+            <li><img class="hero_carousel_event-img-item hide" src="img/event/event-4.png" alt="Event image"></li>
+            <li><img class="hero_carousel_event-img-item hide" src="img/event/event-5.png" alt="Event image"></li>
+        </ul>
+        <nav class="hero_carousel_event-nav">
+            <div class="hero_carousel_event-nav_left">&lsaquo;</div>
+            <ul class="hero_carousel_event-nav-list">
+                <li class="hero_carousel_event-nav-item">
+                    <div class="event_date">
+                        <div class="event_week-day">Пн</div>
+                        <div class="event_day-num">21</div>
+                        <div class="event_month">лютого</div>
+                    </div>
+                    <div class="event_main-info hide">
+                        <h3 class="event_caption">Сад гетсиманский</h3>
+                        <p class="event_text-about">Народна трагедія на 2 дії.<br>Тривалість вистави 2 год 20 хв.
+                            <a href="#"><span class="call-to-action-btn">купити квиток</span></a></p>
+                    </div>
+                </li>
+                <li class="hero_carousel_event-nav-item">
+                    <div class="event_date">
+                        <div class="event_week-day">Вт</div>
+                        <div class="event_day-num">22</div>
+                        <div class="event_month">лютого</div>
+                    </div>
+                    <div class="event_main-info hide">
+                        <h3 class="event_caption">Сад гетсиманский</h3>
+                        <p class="event_text-about">Народна трагедія на 2 дії.<br>Тривалість вистави 2 год 20 хв.
+                            <a href="#"><span class="call-to-action-btn">купити квиток</span></a></p>
+                    </div>
+                </li>
+                <li class="hero_carousel_event-nav-item">
+                    <div class="event_date active">
+                        <div class="event_week-day">Ср</div>
+                        <div class="event_day-num">23</div>
+                        <div class="event_month">лютого</div>
+                    </div>
+                    <div class="event_main-info active">
+                        <h3 class="event_caption">Сад гетсиманский</h3>
+                        <p class="event_text-about">Народна трагедія на 2 дії.<br>Тривалість вистави 2 год 20 хв.
+                            <a href="#"><span class="call-to-action-btn">купити квиток</span></a></p>
+                    </div>
+                </li>
+                <li class="hero_carousel_event-nav-item">
+                    <div class="event_date">
+                        <div class="event_week-day">Чт</div>
+                        <div class="event_day-num">24</div>
+                        <div class="event_month">лютого</div>
+                    </div>
+                    <div class="event_main-info hide">
+                        <h3 class="event_caption">Сад гетсиманский</h3>
+                        <p class="event_text-about">Народна трагедія на 2 дії.<br>Тривалість вистави 2 год 20 хв.
+                            <a href="#"><span class="call-to-action-btn">купити квиток</span></a></p>
+                    </div>
+                </li>
+                <li class="hero_carousel_event-nav-item">
+                    <div class="event_date">
+                        <div class="event_week-day">Пн</div>
+                        <div class="event_day-num">25</div>
+                        <div class="event_month">лютого</div>
+                    </div>
+                    <div class="event_main-info hide">
+                        <h3 class="event_caption">Сад гетсиманский</h3>
+                        <p class="event_text-about">Народна трагедія на 2 дії.<br>Тривалість вистави 2 год 20 хв.
+                            <a href="#"><span class="call-to-action-btn">купити квиток</span></a></p>
+                    </div>
+                </li>
+            </ul>
+            <div class="hero_carousel_event-nav_right">&rsaquo;</div>
+        </nav>
+    </div>
 </section>
 <aside class="left-nav">
     <ul class="left-nav_list">
@@ -116,7 +122,7 @@
     </ul>
 </aside>
 <main>
-    <h2 class="sect-caption">Новини</h2>
+    <h2 class="sect-caption" id="news">Новини</h2>
     <article>
         <img class="article-img" src="img/news/news-1.png" alt="Thumbnail of current news">
         <h4 class="article-caption">Назва новини</h4>
@@ -264,5 +270,7 @@
             </span>
     </ul>
 </footer>
+<script src="JS/jquery.min.js"></script>
+<script src="JS/main.js"></script>
 </body>
 </html>

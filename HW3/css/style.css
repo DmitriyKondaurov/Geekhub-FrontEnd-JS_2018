@@ -1,7 +1,4 @@
-:root {
-  --header-light-bg-color: #f1592a;
-  --header-dark-bg-color: #bf1e2e;
-}
+
 
 @font-face {
   font-family: 'Conv_9151';
@@ -12,7 +9,7 @@
 }
 
 body  {
-  font: 400 12px/12px 'Roboto', sans-serif;
+  font: 400 12px/14px 'Roboto', sans-serif;
 }
 
 ul {
@@ -28,11 +25,12 @@ a {
 
 .header {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
   height: 76px;
-  background-image: linear-gradient(to left, var(--header-light-bg-color), var(--header-light-bg-color));
+  background-image: linear-gradient(to left, #bf1e2e, #f1592a);
 }
 
 .wrapper {
@@ -82,14 +80,15 @@ a {
   align-items: stretch;
 }
 
-.top-nav_item {
+.top-nav_item a{
+  display: block;
   color: #fff;
   line-height: 76px;
   vertical-align: middle;
   text-transform: uppercase;
 }
 
-.top-nav_item:hover {
+.top-nav_item:hover a{
   background-color: #fff;
   color: #2a2a2a;
   cursor: pointer;
@@ -106,4 +105,149 @@ a {
 
 .lang-switch:after {
   content: "\25be";
+}
+
+.hide {
+  display: none;
+}
+
+.hero {
+  position: relative;
+  margin-top: 60px;
+}
+
+.hero_carousel_event-nav_left, .hero_carousel_event-nav_right {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  box-sizing: border-box;
+  margin: auto 7px;
+  padding: 9px 13px;
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.4);
+  background-image: linear-gradient(to top, #4c4c4c, #505050);
+  vertical-align: middle;
+  font: 100 42px/11px Roboto, sans-serif;
+}
+
+.hero_carousel_event-nav_left:hover, .hero_carousel_event-nav_right:hover {
+  background-image: linear-gradient(to top, #dd492a, #e54b2b);
+  cursor: pointer;
+}
+
+.hero_carousel_event-nav {
+  position: absolute;
+  width: 1000px;
+  bottom: 18px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.hero_carousel_event-nav-list {
+  display: flex;
+  justify-content: space-around;
+  width: 930px;
+  color: white;
+}
+
+.hero_carousel_event-nav-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event_main-info{
+  position: relative;
+  background: url(../img/backgrounds/bg-event-main-info.png) center/cover no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.event_date {
+  padding: 11px 18px;
+  box-sizing: border-box;
+  width: 92px;
+  height: 92px;
+  background:
+          linear-gradient(135deg, transparent 10px, #4c4c4c 0) top left,
+          linear-gradient(225deg, transparent 10px, #4c4c4c 0) top right,
+          linear-gradient(315deg, transparent 10px, #4c4c4c 0) bottom right,
+          linear-gradient(45deg,  transparent 10px, #4c4c4c 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-image:
+          radial-gradient(circle at 0 0, rgba(221,73,42,0) 9px, #4c4c4c 10px),
+          radial-gradient(circle at 100% 0, rgba(221,73,42,0) 9px, #4c4c4c 10px),
+          radial-gradient(circle at 100% 100%, rgba(221,73,42,0) 9px, #4c4c4c 10px),
+          radial-gradient(circle at 0 100%, rgba(221,73,42,0) 9px, #4c4c4c 10px);
+}
+
+.event_date.active {
+  width: 92px;
+  height: 92px;
+  background:
+          linear-gradient(135deg, transparent 10px, #dd492a 0) top left,
+          linear-gradient(225deg, transparent 10px, #dd492a 0) top right,
+          linear-gradient(315deg, transparent 10px, #dd492a 0) bottom right,
+          linear-gradient(45deg,  transparent 10px, #dd492a 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-image:
+          radial-gradient(circle at 0 0, rgba(221,73,42,0) 9px, #dd492a 10px),
+          radial-gradient(circle at 100% 0, rgba(221,73,42,0) 9px, #dd492a 10px),
+          radial-gradient(circle at 100% 100%, rgba(221,73,42,0) 9px, #dd492a 10px),
+          radial-gradient(circle at 0 100%, rgba(221,73,42,0) 9px, #dd492a 10px);
+}
+
+.event_main-info {
+  padding: 11px 18px;
+  box-sizing: border-box;
+  width: 474px;
+  height: 93px;
+}
+
+.event_caption {
+  margin: 0 0 15px 0;
+  font: 100 27px/22px Roboto, sans-serif;
+}
+
+.call-to-action-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 55px;
+  display: inline-block;
+  width: 115px;
+  height: 25px;
+  background-image: linear-gradient(to top, #4c4c4c, #505050);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 25px;
+  color: white;
+  font-size: 11px;
+}
+
+.event_text-about {
+  font: 100 14px/14px Roboto, sans-serif;
+}
+
+.event_week-day {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font: 100 18px/14px Roboto, sans-serif;
+}
+
+.event_day-num {
+  text-align: center;
+  font: 100 46px/46px Roboto, sans-serif;
+}
+
+.event_month {
+  display: block;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  font: 100 16px/16px Roboto, sans-serif;
 }
