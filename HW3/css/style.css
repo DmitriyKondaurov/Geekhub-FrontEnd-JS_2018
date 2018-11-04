@@ -395,6 +395,10 @@ display: none;
   margin-left: 20px;
 }
 
+.right-nav_item:hover p {
+  color: #bf1e2e;
+}
+
 .right-nav_item_text {
   box-sizing: border-box;
   height: 54px;
@@ -432,6 +436,10 @@ display: none;
   border-radius: 0 0 3px 3px;
   box-shadow: 0 0.5px 0.5px;
   color: rgba(0, 0, 0, 0.4);
+}
+
+.news-article:hover, .news-article a:hover p, .news-article a:hover h4 {
+  color: #bf1e2e;
 }
 
 .news-article_caption {
@@ -541,4 +549,8 @@ display: none;
 .footer-social-lnk_item a {
   font-size: 9px;
   color: rgba(0, 0, 0, 0.4);
+}
+
+.footer-social-lnk_item a:hover {
+  color: #bf1e2e;
 }
