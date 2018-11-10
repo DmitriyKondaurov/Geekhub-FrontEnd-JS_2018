@@ -1,0 +1,25 @@
+body {
+  @include font(normal, 18px, 32px, 'Lato');
+  @include text($main-text-color, left, none, 0, none);
+}
+
+.wrapper  {
+  max-width: $wrapper;
+  margin: auto;
+}
+
+@media screen and ($xs) {
+
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+
+}

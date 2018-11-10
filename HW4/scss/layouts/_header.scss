@@ -1,0 +1,32 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  padding: 5px;
+  z-index: 2;
+  &.active {
+    background-color: rgba(255, 150, 22, 0.3);
+  }
+  .header_wrapper {
+    max-width: $wrapper;
+    margin: auto;
+  }
+
+}
+
+@media screen and ($xs) {
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+
+}
