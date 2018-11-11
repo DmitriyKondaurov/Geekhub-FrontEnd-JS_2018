@@ -7,15 +7,21 @@
   padding: 5px;
   z-index: 2;
   &.active {
-    background-color: rgba(235, 64, 44, 0.8);
+    background-color: rgba(235, 64, 44, 0.9);
   }
   .header_wrapper {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: $wrapper;
-    margin: auto;
+    max-width: 1600px;
+    margin: 0 auto;
   }
+
   .logo-company {
     @include font(900, 50px, 52px, 'Lato');
     a {
@@ -26,30 +32,50 @@
       text-shadow: 0 0 15px #000;
     }
   }
+
+  .top-nav {
+    align-self: stretch;
+  }
+
   .top-nav_list {
     display: flex;
-    justify-content: space-between;
     width: 425px;
-    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     list-style: none;
     @include font(400, 18px, 28px, 'Lato');
     @include text($color: #fff, $align: center, $decoration: none, $indent: 0, $transform: uppercase);
   }
   .top-nav_item {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     a {
+      margin: auto;
+      display: block;
       color: #fff;
       text-decoration: none;
+      line-height: 100%;
+      vertical-align: middle;
     }
     &:first-child a {
       text-decoration: line-through;
     }
-    &:hover a {
-      text-shadow: 0 0 5px #000;
+    &:hover {
+      background-color: #fff;
+      cursor: pointer;
+      a {
+        color: #000;
+      }
     }
   }
 }
 
 @media screen and ($xs) {
+
 }
 
 @media screen and ($sm) {

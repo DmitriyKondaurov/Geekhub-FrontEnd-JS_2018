@@ -1,6 +1,31 @@
 .hero {
   padding-top: 120px;
-  background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);}
+  background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
+
+  .slogan {
+    max-width: 425px;
+    padding: 5px;
+    margin: 15px;
+    @include font(900, 72px, 72px, 'Lato');
+    @include text($color: #fff, $align: left, $decoration: none, $indent: 0, $transform: none);
+  }
+
+  .header_wrapper{
+    max-width: $wrapper;
+  }
+
+  .hero_text {
+    max-width: 550px;
+    margin: 15px;
+    padding: 5px;
+    @include font(400, 24px, 28px, 'Lato');
+    @include text($color: #fff, $align: left, $decoration: none, $indent: 0, $transform: none);
+  }
+
+  .preview-img {
+
+  }
+}
 //________________________________________________________________________________
 @media screen and ($xs) {
 
