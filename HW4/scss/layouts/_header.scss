@@ -3,17 +3,50 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 120px;
   padding: 5px;
   z-index: 2;
   &.active {
-    background-color: rgba(255, 150, 22, 0.3);
+    background-color: rgba(235, 64, 44, 0.8);
   }
   .header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: $wrapper;
     margin: auto;
   }
-
+  .logo-company {
+    @include font(900, 50px, 52px, 'Lato');
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    &:hover {
+      text-shadow: 0 0 15px #000;
+    }
+  }
+  .top-nav_list {
+    display: flex;
+    justify-content: space-between;
+    width: 425px;
+    align-items: center;
+    list-style: none;
+    @include font(400, 18px, 28px, 'Lato');
+    @include text($color: #fff, $align: center, $decoration: none, $indent: 0, $transform: uppercase);
+  }
+  .top-nav_item {
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    &:first-child a {
+      text-decoration: line-through;
+    }
+    &:hover a {
+      text-shadow: 0 0 5px #000;
+    }
+  }
 }
 
 @media screen and ($xs) {
