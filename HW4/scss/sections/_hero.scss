@@ -1,6 +1,10 @@
 .hero {
-  padding-top: 120px;
-  background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
+  .clip-path-block {
+    height: 800px;
+    padding-top: 200px;
+    background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+  }
 
   .slogan {
     max-width: 425px;
@@ -10,8 +14,15 @@
     @include text($color: #fff, $align: left, $decoration: none, $indent: 0, $transform: none);
   }
 
-  .header_wrapper{
-    max-width: $wrapper;
+  .hero_wrapper{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+  }
+
+  .hero_block-text {
+    padding-top: 65px;
   }
 
   .hero_text {
@@ -22,8 +33,45 @@
     @include text($color: #fff, $align: left, $decoration: none, $indent: 0, $transform: none);
   }
 
-  .preview-img {
+  .logo-company-text {
+    font-weight: 900;
+  }
 
+  .call-to-action-btn {
+    width: 224px;
+    height: 50px;
+    margin: 95px 0 0 20px;
+    padding: 0;
+    border-radius: 25px;
+    border: 1px solid white;
+    outline: none;
+    background-color: #fff;
+
+    &:hover {
+      box-shadow: 0 0 15px;
+
+      a {
+        color: #000;
+      }
+    }
+
+    a {
+      display: block;
+      @include font(700, 18px, 48px, 'Lato');
+      @include text($color: #df1c3c, $align: center, $decoration: none, $indent: 0, $transform: none);
+    }
+  }
+}
+
+.hero_block-img {
+  display: block;
+  position: relative;
+  max-width: 1250px;
+  margin: 0 auto;
+  .preview-img {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
   }
 }
 //________________________________________________________________________________

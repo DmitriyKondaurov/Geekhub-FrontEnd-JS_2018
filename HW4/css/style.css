@@ -140,37 +140,95 @@ body {
       .header .top-nav_item:hover a {
         color: #000; }
 
-.hero {
-  padding-top: 120px;
+.hero .clip-path-block {
+  height: 800px;
+  padding-top: 200px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#eb402c), to(#d90647));
   background-image: -webkit-linear-gradient(bottom, #eb402c 0%, #d90647 100%);
   background-image: -o-linear-gradient(bottom, #eb402c 0%, #d90647 100%);
-  background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%); }
-  .hero .slogan {
-    max-width: 425px;
-    padding: 5px;
-    margin: 15px;
-    font-weight: 900;
-    font-size: 72px;
+  background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%); }
+
+.hero .slogan {
+  max-width: 425px;
+  padding: 5px;
+  margin: 15px;
+  font-weight: 900;
+  font-size: 72px;
+  font-family: "Lato";
+  line-height: 72px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-transform: none;
+  color: #fff; }
+
+.hero .hero_wrapper {
+  max-width: 1250px;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start; }
+
+.hero .hero_block-text {
+  padding-top: 65px; }
+
+.hero .hero_text {
+  max-width: 550px;
+  margin: 15px;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Lato";
+  line-height: 28px;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-transform: none;
+  color: #fff; }
+
+.hero .logo-company-text {
+  font-weight: 900; }
+
+.hero .call-to-action-btn {
+  width: 224px;
+  height: 50px;
+  margin: 95px 0 0 20px;
+  padding: 0;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  border: 1px solid white;
+  outline: none;
+  background-color: #fff; }
+  .hero .call-to-action-btn:hover {
+    -webkit-box-shadow: 0 0 15px;
+            box-shadow: 0 0 15px; }
+    .hero .call-to-action-btn:hover a {
+      color: #000; }
+  .hero .call-to-action-btn a {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
     font-family: "Lato";
-    line-height: 72px;
-    text-align: left;
+    line-height: 48px;
+    text-align: center;
     text-decoration: none;
     text-indent: 0;
     text-transform: none;
-    color: #fff; }
-  .hero .header_wrapper {
-    max-width: 1170px; }
-  .hero .hero_text {
-    max-width: 550px;
-    margin: 15px;
-    padding: 5px;
-    font-weight: 400;
-    font-size: 24px;
-    font-family: "Lato";
-    line-height: 28px;
-    text-align: left;
-    text-decoration: none;
-    text-indent: 0;
-    text-transform: none;
-    color: #fff; }
+    color: #df1c3c; }
+
+.hero_block-img {
+  display: block;
+  position: relative;
+  max-width: 1250px;
+  margin: 0 auto; }
+  .hero_block-img .preview-img {
+    position: absolute;
+    bottom: -20px;
+    right: 0; }
