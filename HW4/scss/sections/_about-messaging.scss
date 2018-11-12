@@ -1,4 +1,47 @@
+.about-messaging {
+  max-width: $wrapper;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
 
+  .about-messaging_explain {
+    flex-shrink: 0;
+    flex-basis: 557px;
+  }
+
+  .explain_caption {
+    @include font(900, 57px, 57px, 'Lato');
+    @include text($color: $sec-text-color, $align: left, $decoration: none, $indent: 0, $transform: none);
+    margin: 40px 0;
+  }
+
+  .about-messaging_picture {
+    flex-shrink: 0;
+  }
+
+  .about-messaging_picture_scr-shot-behind {
+    position: relative;
+    top: -50px;
+    transition: all 1s;
+    &:hover {
+      top: 0;
+      z-index: 2;
+    }
+  }
+
+  .about-messaging_picture_scr-shot-before {
+    position: relative;
+    top: 50px;
+    left: -200px;
+    transition: all 1s;
+    &:hover {
+      top: 0;
+      left: -100px;
+    }
+  }
+}
 //________________________________________________________________________________
 @media screen and ($xs) {
 

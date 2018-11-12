@@ -11,8 +11,11 @@ body {
   color: #808080; }
 
 .wrapper {
-  max-width: 1170px;
+  max-width: 1315px;
   margin: auto; }
+
+.caption-dot {
+  color: #df1c3c; }
 
 @font-face {
   font-family: "icomoon";
@@ -53,7 +56,7 @@ body {
   right: 0;
   height: 120px;
   padding: 5px;
-  z-index: 2; }
+  z-index: 5; }
   .header.active {
     background-color: rgba(235, 64, 44, 0.9); }
   .header .header_wrapper {
@@ -226,9 +229,125 @@ body {
 .hero_block-img {
   display: block;
   position: relative;
-  max-width: 1250px;
+  max-width: 1315px;
   margin: 0 auto; }
   .hero_block-img .preview-img {
     position: absolute;
     bottom: -20px;
     right: 0; }
+
+.about-contacts-manager {
+  max-width: 1315px;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .about-contacts-manager .about-contacts-manager_explain {
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    -webkit-flex-basis: 557px;
+        -ms-flex-preferred-size: 557px;
+            flex-basis: 557px; }
+  .about-contacts-manager .explain_caption {
+    font-weight: 900;
+    font-size: 57px;
+    font-family: "Lato";
+    line-height: 57px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    color: #363636;
+    margin: 40px 0; }
+  .about-contacts-manager .about-contacts-manager_picture {
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+  .about-contacts-manager .about-contacts-manager_picture_scr-shot-behind {
+    position: relative;
+    top: -50px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    margin: 0 0 0 -80px; }
+    .about-contacts-manager .about-contacts-manager_picture_scr-shot-behind:hover {
+      margin: 0; }
+  .about-contacts-manager .about-contacts-manager_picture_scr-shot-before {
+    position: relative;
+    z-index: 1;
+    top: 80px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s; }
+
+.about-messaging {
+  max-width: 1315px;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+  .about-messaging .about-messaging_explain {
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    -webkit-flex-basis: 557px;
+        -ms-flex-preferred-size: 557px;
+            flex-basis: 557px; }
+  .about-messaging .explain_caption {
+    font-weight: 900;
+    font-size: 57px;
+    font-family: "Lato";
+    line-height: 57px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    color: #363636;
+    margin: 40px 0; }
+  .about-messaging .about-messaging_picture {
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+  .about-messaging .about-messaging_picture_scr-shot-behind {
+    position: relative;
+    top: -50px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s; }
+    .about-messaging .about-messaging_picture_scr-shot-behind:hover {
+      top: 0;
+      z-index: 2; }
+  .about-messaging .about-messaging_picture_scr-shot-before {
+    position: relative;
+    top: 50px;
+    left: -200px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s; }
+    .about-messaging .about-messaging_picture_scr-shot-before:hover {
+      top: 0;
+      left: -100px; }
