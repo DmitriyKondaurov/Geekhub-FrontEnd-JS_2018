@@ -1,5 +1,5 @@
 .testimonials {
-  max-width: $wrapper;
+  max-width: 1170px;
   margin: 100px auto;
 
   .testimonials-caption {
@@ -25,6 +25,11 @@
     .comment-text {
       border: 1px solid $main-text-color;
       padding: 20px 35px 0 30px;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 0.5s;
       @include font(400, 18px, 32px, 'Lato');
       @include text($color: $main-text-color, $align: left, $decoration: none, $indent: 0, $transform: none);
       font-style: italic;
@@ -40,6 +45,18 @@
         border-left: none;
         background-color: #fff;
         transform: rotate(45deg);
+      }
+      &:hover {
+        border: none;
+        box-shadow: 0 30px 60px rgba(54, 54, 54, 0.15);
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -o-transform: translateY(-30px);
+        transform: translateY(-30px);
+        &::after {
+          border: none;
+        }
       }
     }
     .comment-anchor {

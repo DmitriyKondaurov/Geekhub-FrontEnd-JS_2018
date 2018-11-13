@@ -237,7 +237,7 @@ body {
     right: 0; }
 
 .testimonials {
-  max-width: 1315px;
+  max-width: 1170px;
   margin: 100px auto; }
   .testimonials .testimonials-caption {
     font-weight: 900;
@@ -281,6 +281,11 @@ body {
     .testimonials .testimonials-list .comment-text {
       border: 1px solid #808080;
       padding: 20px 35px 0 30px;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
       font-weight: 400;
       font-size: 18px;
       font-family: "Lato";
@@ -305,6 +310,15 @@ body {
         -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
                 transform: rotate(45deg); }
+      .testimonials .testimonials-list .comment-text:hover {
+        border: none;
+        -webkit-box-shadow: 0 30px 60px rgba(54, 54, 54, 0.15);
+                box-shadow: 0 30px 60px rgba(54, 54, 54, 0.15);
+        -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        transform: translateY(-30px); }
+        .testimonials .testimonials-list .comment-text:hover::after {
+          border: none; }
     .testimonials .testimonials-list .comment-anchor {
       display: block;
       padding-top: 15px;
