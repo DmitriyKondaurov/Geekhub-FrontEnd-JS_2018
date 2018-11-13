@@ -58,7 +58,7 @@
     a {
       display: block;
       @include font(700, 18px, 48px, 'Lato');
-      @include text($color: #df1c3c, $align: center, $decoration: none, $indent: 0, $transform: none);
+      @include text($color: $brand-color, $align: center, $decoration: none, $indent: 0, $transform: none);
     }
   }
 }
