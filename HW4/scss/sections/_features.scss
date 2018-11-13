@@ -1,3 +1,51 @@
+.features {
+  background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
+
+  .features-wrapper {
+    position: relative;
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+
+  .features-screencast {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      top: -661px;
+      left: 61px;
+      width: 292px;
+      height: 519px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .play-screencast-icon {
+      display: block;
+      position: absolute;
+      top: 25%;
+      left: 35%;
+      z-index: 1;
+      transform: translate(50%, -50%);
+      width: 56px;
+      height: 56px;
+      overflow: hidden;
+      border-radius: 27px;
+      background: rgba(0, 0, 0, 0.5) url(../img/play-circle.png) center center no-repeat;
+      background-size: cover;
+      color: transparent;
+      &:hover {
+        background: rgba(2, 246, 30, 0.9) url(../img/play-circle.png) center center no-repeat;
+      }
+    }
+  }
+}
+
 
 //________________________________________________________________________________
 @media screen and ($xs) {
@@ -9,7 +57,12 @@
 }
 
 @media screen and ($md) {
-
+  .features {
+    .features-screencast {
+      position: absolute;
+      top: -85px;
+    }
+  }
 }
 
 @media screen and ($lg) {

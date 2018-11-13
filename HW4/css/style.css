@@ -236,6 +236,72 @@ body {
     bottom: -20px;
     right: 0; }
 
+.features {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#eb402c), to(#d90647));
+  background-image: -webkit-linear-gradient(bottom, #eb402c 0%, #d90647 100%);
+  background-image: -o-linear-gradient(bottom, #eb402c 0%, #d90647 100%);
+  background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%); }
+  .features .features-wrapper {
+    position: relative;
+    max-width: 1170px;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .features .features-screencast {
+    position: relative; }
+    .features .features-screencast::after {
+      content: '';
+      display: block;
+      position: relative;
+      top: -661px;
+      left: 61px;
+      width: 292px;
+      height: 519px;
+      background: rgba(0, 0, 0, 0.5); }
+    .features .features-screencast .play-screencast-icon {
+      display: block;
+      position: absolute;
+      top: 25%;
+      left: 35%;
+      z-index: 1;
+      -webkit-transform: translate(50%, -50%);
+          -ms-transform: translate(50%, -50%);
+              transform: translate(50%, -50%);
+      width: 56px;
+      height: 56px;
+      overflow: hidden;
+      -webkit-border-radius: 27px;
+              border-radius: 27px;
+      background: rgba(0, 0, 0, 0.5) url(../img/play-circle.png) center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover;
+      color: transparent; }
+      .features .features-screencast .play-screencast-icon:hover {
+        background: rgba(2, 246, 30, 0.9) url(../img/play-circle.png) center center no-repeat; }
+
+@media screen and (min-width: 992px) {
+  .features .features-screencast {
+    position: absolute;
+    top: -85px; } }
+
 .testimonials {
   max-width: 1170px;
   margin: 100px auto; }
