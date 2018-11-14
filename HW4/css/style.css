@@ -147,6 +147,61 @@ body {
       .header .top-nav_item:hover a {
         color: #000; }
 
+.footer {
+  max-width: 1600px;
+  margin: auto; }
+  .footer .footer_nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer .footer_nav .footer_nav_list {
+      list-style: none;
+      width: 585px;
+      height: 100px;
+      margin: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: stretch;
+      -webkit-justify-content: stretch;
+          -ms-flex-pack: stretch;
+              justify-content: stretch;
+      -webkit-box-align: stretch;
+      -webkit-align-items: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
+      .footer .footer_nav .footer_nav_list .footer_nav_item a {
+        font-weight: 400;
+        font-size: 18px;
+        font-family: "Lato";
+        line-height: 100px;
+        text-align: center;
+        text-decoration: none;
+        text-indent: 0;
+        text-transform: uppercase;
+        color: #363636;
+        display: block;
+        padding: 0 25px; }
+        .footer .footer_nav .footer_nav_list .footer_nav_item a:hover {
+          color: #fff;
+          background-image: -webkit-gradient(linear, left bottom, left top, from(#eb402c), to(#d90647));
+          background-image: -webkit-linear-gradient(bottom, #eb402c 0%, #d90647 100%);
+          background-image: -o-linear-gradient(bottom, #eb402c 0%, #d90647 100%);
+          background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%); }
+  .footer .footer_lang-switch-list {
+    display: inline-block;
+    list-style: none; }
+
 .hero .clip-path-block {
   height: 800px;
   padding-top: 200px;
@@ -363,7 +418,7 @@ body {
     text-transform: none;
     color: #363636;
     margin: auto;
-    padding: 50px 10px; }
+    padding: 95px 0 50px 0; }
   .testimonials .testimonials-list {
     margin-top: 70px;
     padding: 0;
@@ -475,7 +530,8 @@ body {
 
 .download {
   text-align: center;
-  margin: 200px 0; }
+  padding: 70px 0 100px 0;
+  border-bottom: 1px solid #e0e0e0; }
   .download .download-caption {
     font-weight: 900;
     font-size: 57px;
@@ -500,7 +556,9 @@ body {
       background: #df1c3c url(../img/Layer_2.png) center no-repeat; }
 
 .subscribe {
-  text-align: center; }
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 0 150px 0; }
   .subscribe .subscribe_caption {
     font-weight: 900;
     font-size: 57px;
@@ -536,6 +594,9 @@ body {
       background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%); }
 
 .about-contacts-manager {
+  border-bottom: 1px solid #e0e0e0; }
+
+.about-contacts-manager-wrapper {
   max-width: 1315px;
   margin: 20px auto 200px auto;
   display: -webkit-box;
@@ -550,14 +611,14 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  .about-contacts-manager .about-contacts-manager_explain {
+  .about-contacts-manager-wrapper .about-contacts-manager_explain {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0;
     -webkit-flex-basis: 557px;
         -ms-flex-preferred-size: 557px;
             flex-basis: 557px; }
-  .about-contacts-manager .explain_caption {
+  .about-contacts-manager-wrapper .explain_caption {
     font-weight: 900;
     font-size: 57px;
     font-family: "Lato";
@@ -568,20 +629,20 @@ body {
     text-transform: none;
     color: #363636;
     margin: 40px 0; }
-  .about-contacts-manager .about-contacts-manager_picture {
+  .about-contacts-manager-wrapper .about-contacts-manager_picture {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0; }
-  .about-contacts-manager .about-contacts-manager_picture_scr-shot-behind {
+  .about-contacts-manager-wrapper .about-contacts-manager_picture_scr-shot-behind {
     position: relative;
     top: -50px;
     -webkit-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
     margin: 0 0 0 -80px; }
-    .about-contacts-manager .about-contacts-manager_picture_scr-shot-behind:hover {
+    .about-contacts-manager-wrapper .about-contacts-manager_picture_scr-shot-behind:hover {
       margin: 0; }
-  .about-contacts-manager .about-contacts-manager_picture_scr-shot-before {
+  .about-contacts-manager-wrapper .about-contacts-manager_picture_scr-shot-before {
     position: relative;
     z-index: 1;
     top: 80px;

@@ -2,11 +2,12 @@
   max-width: 1170px;
   margin: 100px auto;
 
+
   .testimonials-caption {
     @include font(900, 57px, 57px, 'Lato');
     @include text($color: $sec-text-color, $align: center, $decoration: none, $indent: 0, $transform: none);
     margin: auto;
-    padding: 50px 10px;
+    padding: 95px 0 50px 0;
   }
 
   .testimonials-list {

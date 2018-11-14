@@ -1,4 +1,40 @@
+.footer {
+  max-width: 1600px;
+  margin: auto;
 
+  .footer_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer_nav_list {
+      list-style: none;
+      width: 585px;
+      height: 100px;
+      margin: 0;
+      display: flex;
+      justify-content: stretch;
+      align-items: stretch;
+
+      .footer_nav_item a {
+        @include font(400, 18px, 100px, 'Lato');
+        @include text($color: $sec-text-color, $align: center, $decoration: none, $indent: 0, $transform: uppercase);
+        display: block;
+        padding: 0 25px;
+        &:hover {
+          color: #fff;
+          background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
+        }
+      }
+
+
+    }
+  }
+  .footer_lang-switch-list {
+    display: inline-block;
+    list-style: none;
+  }
+}
 
 @media screen and ($xs) {
 

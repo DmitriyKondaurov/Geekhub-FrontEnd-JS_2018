@@ -1,5 +1,8 @@
 .subscribe {
   text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 0 150px 0;
+
 
   .subscribe_caption {
     @include font(900, 57px, 57px, 'Lato');
