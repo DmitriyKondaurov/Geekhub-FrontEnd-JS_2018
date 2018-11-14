@@ -1,8 +1,28 @@
-.download-caption {
+.download {
+  text-align: center;
+  margin: 200px 0;
 
-  @include font(900, 57px, 57px, 'Lato');
-  @include text($color: $sec-text-color, $align: center, $decoration: none, $indent: 0, $transform: none);
-  margin: 40px 0;
+
+  .download-caption {
+    @include font(900, 57px, 57px, 'Lato');
+    @include text($color: $sec-text-color, $align: center, $decoration: none, $indent: 0, $transform: none);
+    margin: 40px 0;
+  }
+  
+  .download_btn {
+    display: block;
+    width: 183px;
+    height: 60px;
+    margin: 60px auto;
+    color: transparent;
+    border-radius: 10px;
+    background: url(../img/Layer_2.png) center no-repeat;
+
+    &:hover{
+      background: $brand-color url(../img/Layer_2.png) center no-repeat;
+    }
+
+  }
 }
 
 

@@ -473,17 +473,31 @@ body {
       display: block;
       color: #808080; }
 
-.download-caption {
-  font-weight: 900;
-  font-size: 57px;
-  font-family: "Lato";
-  line-height: 57px;
+.download {
   text-align: center;
-  text-decoration: none;
-  text-indent: 0;
-  text-transform: none;
-  color: #363636;
-  margin: 40px 0; }
+  margin: 200px 0; }
+  .download .download-caption {
+    font-weight: 900;
+    font-size: 57px;
+    font-family: "Lato";
+    line-height: 57px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    color: #363636;
+    margin: 40px 0; }
+  .download .download_btn {
+    display: block;
+    width: 183px;
+    height: 60px;
+    margin: 60px auto;
+    color: transparent;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    background: url(../img/Layer_2.png) center no-repeat; }
+    .download .download_btn:hover {
+      background: #df1c3c url(../img/Layer_2.png) center no-repeat; }
 
 .subscribe {
   text-align: center; }
