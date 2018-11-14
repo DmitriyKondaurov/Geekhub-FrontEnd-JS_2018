@@ -15,7 +15,7 @@
 
 .icomoon {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}';
+  font-family: '#{$icomoon-font-family}' !important;  ;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -31,21 +31,25 @@
 .icon-video {
   &:before {
     content: $icon-video;
+    font-size: 32px;
   }
 }
 .icon-chat {
   &:before {
     content: $icon-chat;
+    font-size: 42px;
   }
 }
 .icon-cam {
   &:before {
     content: $icon-cam;
+    font-size: 42px;
   }
 }
 .icon-call {
   &:before {
     content: $icon-call;
+    font-size: 48px;
   }
 }
 

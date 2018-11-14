@@ -26,7 +26,7 @@ body {
 
 .icomoon {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon";
+  font-family: "icomoon" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -38,16 +38,20 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 .icon-video:before {
-  content: ""; }
+  content: "";
+  font-size: 32px; }
 
 .icon-chat:before {
-  content: ""; }
+  content: "";
+  font-size: 42px; }
 
 .icon-cam:before {
-  content: ""; }
+  content: "";
+  font-size: 42px; }
 
 .icon-call:before {
-  content: ""; }
+  content: "";
+  font-size: 48px; }
 
 .header {
   position: fixed;
@@ -237,6 +241,7 @@ body {
     right: 0; }
 
 .features {
+  margin: 200px 0;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#eb402c), to(#d90647));
   background-image: -webkit-linear-gradient(bottom, #eb402c 0%, #d90647 100%);
   background-image: -o-linear-gradient(bottom, #eb402c 0%, #d90647 100%);
@@ -244,27 +249,65 @@ body {
   .features .features-wrapper {
     position: relative;
     max-width: 1170px;
-    margin: auto;
+    margin: auto; }
+  .features .features-list {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    height: 517px;
+    margin: 0;
+    padding: 50px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: column;
-        -ms-flex-flow: column;
-            flex-flow: column;
+    -webkit-align-content: space-around;
+        -ms-flex-line-pack: distribute;
+            align-content: space-around;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+    list-style: none; }
+  .features .features-item {
+    position: relative;
+    width: 255px;
+    height: 110px;
+    margin: 0 140px 0 0;
+    text-align: right;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Lato";
+    line-height: 28px;
+    text-align: right;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    color: #fff; }
+    .features .features-item::before {
+      position: absolute;
+      right: -100px;
+      font-weight: 400; }
+    .features .features-item:nth-child(even) {
+      position: relative;
+      margin: 0 0 0 140px;
+      text-align: left; }
+      .features .features-item:nth-child(even)::before {
+        position: absolute;
+        left: -100px; }
+    .features .features-item p {
+      margin: 0;
+      font-family: 'Lato', sans-serif; }
+  .features .features_caption {
+    margin: 0;
+    font-weight: 900;
+    font-size: 24px;
+    font-family: "Lato";
+    line-height: 34px;
+    color: #fff;
+    letter-spacing: 1.44px; }
   .features .features-screencast {
     position: relative; }
     .features .features-screencast::after {
@@ -282,9 +325,9 @@ body {
       top: 25%;
       left: 35%;
       z-index: 1;
-      -webkit-transform: translate(50%, -50%);
-          -ms-transform: translate(50%, -50%);
-              transform: translate(50%, -50%);
+      -webkit-transform: translate(50%, 0);
+          -ms-transform: translate(50%, 0);
+              transform: translate(50%, 0);
       width: 56px;
       height: 56px;
       overflow: hidden;
@@ -300,7 +343,11 @@ body {
 @media screen and (min-width: 992px) {
   .features .features-screencast {
     position: absolute;
-    top: -85px; } }
+    top: -85px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); } }
 
 .testimonials {
   max-width: 1170px;
@@ -425,6 +472,54 @@ body {
     .testimonials .testimonials-list .author-specialty {
       display: block;
       color: #808080; }
+
+.download-caption {
+  font-weight: 900;
+  font-size: 57px;
+  font-family: "Lato";
+  line-height: 57px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+  text-transform: none;
+  color: #363636;
+  margin: 40px 0; }
+
+.subscribe {
+  text-align: center; }
+  .subscribe .subscribe_caption {
+    font-weight: 900;
+    font-size: 57px;
+    font-family: "Lato";
+    line-height: 57px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    color: #363636;
+    margin: 40px 0; }
+  .subscribe .subscribe_form {
+    padding: 50px; }
+    .subscribe .subscribe_form .subscribe_email {
+      height: 50px;
+      width: 380px;
+      padding: 0 30px;
+      -webkit-border-radius: 25px;
+              border-radius: 25px;
+      border: none;
+      background-color: #f8f8f8; }
+    .subscribe .subscribe_form .subscribe_submit {
+      position: relative;
+      height: 50px;
+      left: -50px;
+      padding: 0 50px;
+      -webkit-border-radius: 25px;
+              border-radius: 25px;
+      border: none;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#eb402c), to(#d90647));
+      background-image: -webkit-linear-gradient(bottom, #eb402c 0%, #d90647 100%);
+      background-image: -o-linear-gradient(bottom, #eb402c 0%, #d90647 100%);
+      background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%); }
 
 .about-contacts-manager {
   max-width: 1315px;
