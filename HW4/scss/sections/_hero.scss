@@ -1,6 +1,7 @@
 .hero {
+
   .clip-path-block {
-    height: 800px;
+    height: 950px;
     padding-top: 200px;
     background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
     clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
@@ -70,7 +71,7 @@
   margin: 0 auto;
   .preview-img {
     position: absolute;
-    bottom: -20px;
+    bottom: -70px;
     right: 0;
   }
 }

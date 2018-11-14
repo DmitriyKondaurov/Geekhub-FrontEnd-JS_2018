@@ -16,7 +16,7 @@ gulp.task('sass',  function() {
 
 gulp.task('css-libs', function() {
     return gulp.src([
-        './node_modules/normalize.css/normalize.css'
+        './node_modules/bootstrap/dist/css/bootstrap.min.css'
     ])
         .pipe(concat('libs-style.css'))
         .pipe(cssnano())

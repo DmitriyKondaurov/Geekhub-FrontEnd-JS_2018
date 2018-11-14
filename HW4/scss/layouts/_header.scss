@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   height: 120px;
-  padding: 5px;
+  padding: 0;
   z-index: 5;
   &.active {
     background-color: rgba(235, 64, 44, 0.9);
@@ -16,6 +16,7 @@
     -ms-transform: translateZ(0);
     -o-transform: translateZ(0);
     transform: translateZ(0);
+    height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,7 +1,7 @@
 .subscribe {
   text-align: center;
   border-bottom: 1px solid #e0e0e0;
-  padding: 0 0 150px 0;
+  padding: 0 0 100px 0;
 
 
   .subscribe_caption {
@@ -29,7 +29,13 @@
       padding: 0 50px;
       border-radius: 25px;
       border: none ;
+      color: #fff;
       background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
+
+      &:hover {
+        box-shadow: 0 0 10px;
+        color: #000;
+      }
     }
   }
 }
