@@ -3,9 +3,6 @@
 *.sass.map
 *.scss.map
 .idea/
-<<<<<<< HEAD
-*/node_modules
-=======
 
 ### Node ###
 # Logs
@@ -21,10 +18,3 @@ yarn-error.log*
 *.tgz
 # Optional npm cache directory
 .npm
-
-### Bower ###
-bower_components
-.bower-cache
-.bower-registry
-.bower-tmp
->>>>>>> origin/master
