@@ -1,0 +1,100 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  padding: 0;
+  z-index: 5;
+  &.active {
+    background-color: rgba(235, 64, 44, 0.9);
+  }
+
+  .header_wrapper {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .logo-company {
+    @include font(900, 50px, 52px, 'Lato');
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    &:hover {
+      text-shadow: 0 0 15px #000;
+    }
+  }
+
+  .top-nav {
+    align-self: stretch;
+  }
+
+  .top-nav_list {
+    display: flex;
+    width: 425px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include font(400, 18px, 28px, 'Lato');
+    @include text($color: #fff, $align: center, $decoration: none, $indent: 0, $transform: uppercase);
+  }
+
+  .top-nav_item {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      margin: auto;
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      line-height: 100%;
+      vertical-align: middle;
+    }
+
+    &:first-child a {
+      text-decoration: line-through;
+    }
+
+    &:hover {
+      background-color: #fff;
+      cursor: pointer;
+
+      a {
+        color: #000;
+      }
+    }
+  }
+}
+
+@media screen and ($xs) {
+
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+
+}
