@@ -26,10 +26,9 @@
           background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
         }
       }
-
-
     }
   }
+
   .footer_lang-switch-list {
     width: 200px;
     height: 50px;
@@ -44,7 +43,7 @@
     width: 200px;
   }
 
-  .show #dropdownMenuButton {
+  .show button {
     color: #fff;
     background-color: inherit;
     background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
