@@ -18,3 +18,4 @@ yarn-error.log*
 *.tgz
 # Optional npm cache directory
 .npm
+*/dist/

@@ -1,0 +1,112 @@
+.features {
+  margin: 200px 0;
+  background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
+
+  .features-wrapper {
+    position: relative;
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  .features-list {
+    display: flex;
+    height: 517px;
+    margin: 0;
+    padding: 50px 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  .features-item {
+    position: relative;
+    width: 255px;
+    height: 110px;
+    margin: 0 140px 0 0;
+    text-align: right;
+    @include font(400, 16px, 28px, 'Lato');
+    @include text($color: #fff, $align: right, $decoration: none, $indent: 0, $transform: none);
+    &::before {
+      position: absolute;
+      right: -100px;
+      font-weight: 400;
+    }
+    &:nth-child(even) {
+      position: relative;
+      margin: 0 0 0 140px;
+      text-align: left;
+      &::before {
+        position: absolute;
+        left: -100px;
+      }
+    }
+    & p {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+    }
+  }
+  .features_caption {
+    margin: 0;
+    @include font(900, 24px, 34px, 'Lato');
+    color: #fff;
+    letter-spacing: 1.44px;
+  }
+  .features-screencast {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      top: -650px;
+      left: 61px;
+      width: 292px;
+      height: 519px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .play-screencast-icon {
+      display: block;
+      position: absolute;
+      top: 25%;
+      left: 35%;
+      z-index: 1;
+      transform: translate(50%, 0);
+      width: 56px;
+      height: 56px;
+      overflow: hidden;
+      border-radius: 27px;
+      background: rgba(0, 0, 0, 0.5) url(../img/play-circle.png) center center no-repeat;
+      background-size: cover;
+      color: transparent;
+      &:hover {
+        background: rgba(2, 246, 30, 0.9) url(../img/play-circle.png) center center no-repeat;
+      }
+    }
+  }
+}
+
+//________________________________________________________________________________
+@media screen and ($xs) {
+
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($md) {
+  .features {
+    .features-screencast {
+      position: absolute;
+      top: -85px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media screen and ($lg) {
+}
+
