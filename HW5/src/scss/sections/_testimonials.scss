@@ -1,0 +1,104 @@
+.testimonials {
+  max-width: 1170px;
+  margin: 100px auto;
+
+
+  .testimonials-caption {
+    @include font(900, 57px, 57px, 'Lato');
+    @include text($color: $sec-text-color, $align: center, $decoration: none, $indent: 0, $transform: none);
+    margin: auto;
+    padding-bottom: 50px;
+  }
+
+  .testimonials-list {
+    margin-top: 70px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .testimonials-item {
+      flex-shrink: 1;
+      flex-grow: 0;
+      flex-basis: 370px;
+    }
+
+    .comment-text {
+      border: 1px solid $main-text-color;
+      padding: 20px 35px 0 30px;
+      transition: all 0.5s;
+      @include font(400, 18px, 32px, 'Lato');
+      @include text($color: $main-text-color, $align: left, $decoration: none, $indent: 0, $transform: none);
+      font-style: italic;
+      &::after {
+        position: relative;
+        content: '';
+        display: block;
+        top: 11px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $main-text-color;
+        border-top: none;
+        border-left: none;
+        background-color: #fff;
+        transform: rotate(45deg);
+      }
+      &:hover {
+        border: none;
+        box-shadow: 0 30px 60px rgba(54, 54, 54, 0.15);
+        transform: translateY(-30px);
+        &::after {
+          border: none;
+        }
+      }
+    }
+
+    .comment-link {
+      display: block;
+      padding-top: 5px;
+      @include font(700, 18px, 28px, 'Lato');
+      @include text($color: $brand-color, $align: left, $decoration: none, $indent: 0, $transform: none);
+      font-style: normal;
+      letter-spacing: 1.08px;
+    }
+
+    .comment-author {
+      padding-top: 25px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .author-name-spec {
+      @include font(400, 18px, 32px, 'Lato');
+      @include text($color: $sec-text-color, $align: left, $decoration: none, $indent: 0, $transform: none);
+      padding-left: 15px;
+    }
+
+    .author-specialty {
+      display: block;
+      color: $main-text-color;
+    }
+  }
+}
+
+
+
+//________________________________________________________________________________
+@media screen and ($xs) {
+
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($md) {
+
+}
+
+@media screen and ($lg) {
+
+}
+
