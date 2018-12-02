@@ -8049,57 +8049,183 @@ body {
     -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
             align-self: stretch; }
+  .header .top-mnu {
+    height: 100%; }
+
+.toggle-mnu-btn {
+  position: relative;
+  display: none;
+  width: 60px;
+  height: 60px;
+  margin: auto 5px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  outline: none;
+  cursor: pointer; }
+  .toggle-mnu-btn div:hover div {
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black;
+    background-color: #df1c3c; }
+
+#sandwich {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  top: 12px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 200; }
+
+.sw-topper {
+  position: relative;
+  top: 0;
+  margin: auto;
+  width: 54px;
+  height: 6px;
+  background: white;
+  border: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+          border-radius: 4px 4px 4px 4px;
+  -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+  transition: top 0.2s, -webkit-transform 0.5s;
+  -o-transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s; }
+
+/* transition-delay: 0.2s, 0s; */
+.sw-bottom {
+  position: relative;
+  margin: auto;
+  width: 54px;
+  height: 6px;
+  top: 12px;
+  background: white;
+  border: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+          border-radius: 4px 4px 4px 4px;
+  -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+  transition: top 0.2s, -webkit-transform 0.5s;
+  -o-transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s; }
+
+.sw-footer {
+  position: relative;
+  margin: auto;
+  width: 54px;
+  height: 6px;
+  top: 24px;
+  background: white;
+  border: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+          border-radius: 4px 4px 4px 4px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+#sandwich.active .sw-topper {
+  top: 18px;
+  -webkit-transform: rotate(140deg);
+      -ms-transform: rotate(140deg);
+          transform: rotate(140deg); }
+
+#sandwich.active .sw-bottom {
+  top: 12px;
+  -webkit-transform: rotate(-140deg);
+      -ms-transform: rotate(-140deg);
+          transform: rotate(-140deg); }
+
+#sandwich.active .sw-footer {
+  opacity: 0;
+  top: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.top-mnu {
+  display: inline-block; }
+
+.top-nav_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 425px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Lato";
+  line-height: 120px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+  text-transform: uppercase;
+  color: #fff; }
+
+.top-nav_item {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  .top-nav_item a {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+  .top-nav_item:first-child a {
+    text-decoration: line-through; }
+  .top-nav_item:hover a {
+    background-color: #fff;
+    cursor: pointer;
+    color: #df1c3c; }
+
+@media screen and (max-width: 768px) {
+  .header .toggle-mnu-btn {
+    display: inline-block; }
+  .header .top-mnu {
+    display: none;
+    position: absolute;
+    right: 0; }
   .header .top-nav_list {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 425px;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    width: 360px;
+    height: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
     font-weight: 400;
     font-size: 18px;
     font-family: "Lato";
-    line-height: 28px;
-    text-align: center;
-    text-decoration: none;
-    text-indent: 0;
-    text-transform: uppercase;
-    color: #fff; }
-  .header .top-nav_item {
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    height: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .header .top-nav_item a {
-      margin: auto;
-      display: block;
-      color: #fff;
-      text-decoration: none;
-      line-height: 100%;
-      vertical-align: middle; }
-    .header .top-nav_item:first-child a {
-      text-decoration: line-through; }
-    .header .top-nav_item:hover {
-      background-color: #fff;
-      cursor: pointer; }
-      .header .top-nav_item:hover a {
-        color: #000; }
+    line-height: 75px; } }
 
 .footer {
   max-width: 1600px;
@@ -8271,6 +8397,10 @@ body {
     bottom: -70px;
     right: 0; }
 
+@media screen and (max-width: 768px) {
+  .toggle_mnu {
+    display: none; } }
+
 .features {
   margin: 200px 0;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#eb402c), to(#d90647));
@@ -8371,7 +8501,7 @@ body {
       .features .features-screencast .play-screencast-icon:hover {
         background: rgba(2, 246, 30, 0.9) url(../img/play-circle.png) center center no-repeat; }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .features .features-screencast {
     position: absolute;
     top: -85px;

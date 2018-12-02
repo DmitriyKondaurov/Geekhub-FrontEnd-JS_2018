@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>HeyU</title>
     <meta name="description" content="HeyU">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="img/icons/favicon-96x96.png" sizes="96x96">
@@ -18,12 +19,21 @@
     <div class="header_wrapper">
         <h1 class="logo-company"><a href="#">HeyU</a></h1>
         <nav class="top-nav">
-            <ul class="top-nav_list">
-                <li class="top-nav_item"><a href="#">about</a></li>
-                <li class="top-nav_item"><a href="#">faq</a></li>
-                <li class="top-nav_item"><a href="#">support</a></li>
-                <li class="top-nav_item"><a href="#">blog</a></li>
-            </ul>
+            <div id="site-navigation" class="top-mnu" role="navigation">
+                <ul class="top-nav_list">
+                    <li class="top-nav_item"><a href="#">about</a></li>
+                    <li class="top-nav_item"><a href="#">faq</a></li>
+                    <li class="top-nav_item"><a href="#">support</a></li>
+                    <li class="top-nav_item"><a href="#">blog</a></li>
+                </ul>
+            </div>
+            <div class="toggle-mnu-btn">
+                <div id="sandwich">
+                    <div class="sw-topper"></div>
+                    <div class="sw-bottom"></div>
+                    <div class="sw-footer"></div>
+                </div>
+            </div>
         </nav>
     </div>
 </header>

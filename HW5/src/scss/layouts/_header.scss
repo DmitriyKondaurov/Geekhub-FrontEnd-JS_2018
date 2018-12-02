@@ -41,46 +41,11 @@
     align-self: stretch;
   }
 
-  .top-nav_list {
-    display: flex;
-    width: 425px;
+  .top-mnu {
     height: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    @include font(400, 18px, 28px, 'Lato');
-    @include text($color: #fff, $align: center, $decoration: none, $indent: 0, $transform: uppercase);
   }
 
-  .top-nav_item {
-    flex-grow: 1;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    a {
-      margin: auto;
-      display: block;
-      color: #fff;
-      text-decoration: none;
-      line-height: 100%;
-      vertical-align: middle;
-    }
-
-    &:first-child a {
-      text-decoration: line-through;
-    }
-
-    &:hover {
-      background-color: #fff;
-      cursor: pointer;
-
-      a {
-        color: #000;
-      }
-    }
-  }
 }
 
 @media screen and ($xs) {
