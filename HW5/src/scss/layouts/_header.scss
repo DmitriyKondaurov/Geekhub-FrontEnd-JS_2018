@@ -62,9 +62,9 @@
 
 @media screen and ($lg) {
   .header {
+    max-width: 100%;
     .header_wrapper {
-      max-width: 1070px;
-
+      //justify-content: space-around;
     }
   }
 }

@@ -28,7 +28,7 @@
     text-align: right;
     @include font(400, 16px, 28px, 'Lato');
     @include text($color: #fff, $align: right, $decoration: none, $indent: 0, $transform: none);
-    &::before {
+    &:nth-child(odd)::before {
       position: absolute;
       right: -100px;
       font-weight: 400;
@@ -54,7 +54,10 @@
     letter-spacing: 1.44px;
   }
   .features-screencast {
-    position: relative;
+    position: absolute;
+    top: -85px;
+    left: 50%;
+    transform: translateX(-50%);
 
     &::after {
       content: '';
@@ -92,21 +95,34 @@
 
 }
 
-@media screen and ($sm) {
-
-}
-
-@media screen and ($md) {
+@media screen and (max-width: 865px) {
   .features {
-    .features-screencast {
-      position: absolute;
-      top: -85px;
-      left: 50%;
-      transform: translateX(-50%);
+    flex-flow: column;
+    flex-wrap: nowrap;
+    .features-list {
+      max-width: 580px;
+      margin: auto;
+      justify-content: center;
     }
   }
 }
 
-@media screen and ($lg) {
+@media screen and ($md) {
+  .features {
+    .features-list {
+      height: auto;
+      .features-item {
+        margin: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .features {
+    .features-screencast {
+      display: none;
+    }
+  }
 }
 

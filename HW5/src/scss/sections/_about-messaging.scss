@@ -49,14 +49,33 @@
 }
 
 @media screen and ($sm) {
+  .about-messaging {
+    max-width: $wrapper;
+    padding-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
 
+    .about-messaging_picture {
+      flex-basis: 557px;
+    }
+  }
 }
 
 @media screen and ($md) {
 
 }
 
-@media screen and ($lg) {
-
+@media screen and (max-width: 1400px) {
+  .about-messaging {
+    flex-direction: column;
+    .about-messaging_explain {
+      width: 557px;
+      flex-basis: 350px;
+    }
+    .about-messaging_picture {
+      align-self: flex-end;
+    }
+  }
 }
 

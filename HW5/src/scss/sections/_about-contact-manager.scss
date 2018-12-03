@@ -55,6 +55,16 @@
 
 }
 
-@media screen and ($lg) {
+@media screen and (max-width: 1400px) {
+  .about-contacts-manager-wrapper {
+    flex-direction: column;
+    .about-contacts-manager_explain {
+      width: 557px;
+      flex-basis: 350px;
+    }
+    .about-contacts-manager_picture {
+      align-self: center;
+    }
+  }
 }
 

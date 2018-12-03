@@ -75,16 +75,16 @@
     right: 0;
   }
 }
+
 //________________________________________________________________________________
-@media screen and ($xs) {
 
-}
+@media screen and ($lg) {
+  .hero {
+    .hero_wrapper{
+      max-width: 1070px;
 
-@media screen and ($sm) {
-  .toggle_mnu {
-    display: none;
+    }
   }
-
 }
 
 @media screen and ($md) {
@@ -103,12 +103,21 @@
   }
 }
 
-@media screen and ($lg) {
-  .hero {
-    .hero_wrapper{
-      max-width: 1070px;
+@media screen and ($sm) {
+  .toggle_mnu {
+    display: none;
+  }
 
+}
+
+@media screen and ($xs) {
+  .hero {
+    .clip-path-block {
+      height: 650px;
+
+    }
+    .call-to-action-btn {
+      margin: 55px 0 0 20px;
     }
   }
 }
-
