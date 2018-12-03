@@ -90,7 +90,7 @@
 @media screen and ($md) {
   .hero {
     .clip-path-block {
-      height: 750px;
+      height: 100vh;
       padding-top: 70px;
     }
   }
@@ -113,7 +113,7 @@
 @media screen and ($xs) {
   .hero {
     .clip-path-block {
-      height: 650px;
+      //height: 650px;
 
     }
     .call-to-action-btn {

@@ -46,7 +46,13 @@
 }
 
 @media screen and ($sm) {
-
+  .subscribe {
+    .subscribe_form {
+      .subscribe_email {
+        width: 300px;
+      }
+    }
+  }
 }
 
 @media screen and ($md) {
