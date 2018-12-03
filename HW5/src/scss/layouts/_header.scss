@@ -61,5 +61,10 @@
 }
 
 @media screen and ($lg) {
+  .header {
+    .header_wrapper {
+      max-width: 1070px;
 
+    }
+  }
 }
