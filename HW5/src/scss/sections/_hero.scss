@@ -90,7 +90,7 @@
 @media screen and ($md) {
   .hero {
     .clip-path-block {
-      height: 950px;
+      height: 750px;
       padding-top: 70px;
     }
   }
@@ -98,7 +98,7 @@
   .hero_block-img {
     .preview-img {
       width: 40%;
-      bottom: 100px;
+      bottom: -40px;
     }
   }
 }

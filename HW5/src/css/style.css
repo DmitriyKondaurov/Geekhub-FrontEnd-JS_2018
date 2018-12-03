@@ -8249,7 +8249,7 @@ body {
             align-items: center; }
     .footer .footer_nav .footer_nav_list {
       list-style: none;
-      width: 585px;
+      max-width: 585px;
       height: 100px;
       margin: 0;
       display: -webkit-box;
@@ -8307,6 +8307,12 @@ body {
     background-image: -webkit-linear-gradient(bottom, #eb402c 0%, #d90647 100%);
     background-image: -o-linear-gradient(bottom, #eb402c 0%, #d90647 100%);
     background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%); }
+
+@media screen and (max-width: 992px) {
+  .footer .footer_nav .footer_nav_list {
+    padding: 0; }
+    .footer .footer_nav .footer_nav_list .footer_nav_item a {
+      padding: 0 10px; } }
 
 .hero .clip-path-block {
   height: 950px;
@@ -8407,11 +8413,11 @@ body {
 
 @media screen and (max-width: 992px) {
   .hero .clip-path-block {
-    height: 950px;
+    height: 750px;
     padding-top: 70px; }
   .hero_block-img .preview-img {
     width: 40%;
-    bottom: 100px; } }
+    bottom: -40px; } }
 
 @media screen and (max-width: 768px) {
   .toggle_mnu {
@@ -8887,28 +8893,6 @@ body {
       top: 0;
       left: -100px; }
 
-@media screen and (max-width: 768px) {
-  .about-messaging {
-    max-width: 1315px;
-    padding-top: 100px;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: row-reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse; }
-    .about-messaging .about-messaging_picture {
-      -webkit-flex-basis: 557px;
-          -ms-flex-preferred-size: 557px;
-              flex-basis: 557px; } }
-
 @media screen and (max-width: 1400px) {
   .about-messaging {
     -webkit-box-orient: vertical;
@@ -8925,3 +8909,27 @@ body {
       -webkit-align-self: flex-end;
           -ms-flex-item-align: end;
               align-self: flex-end; } }
+
+@media screen and (max-width: 768px) {
+  .about-messaging .about-messaging_picture {
+    position: relative;
+    height: 600px;
+    width: 360px; }
+  .about-messaging .about-messaging_picture_scr-shot-behind {
+    position: absolute;
+    top: -50px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s; }
+    .about-messaging .about-messaging_picture_scr-shot-behind:hover {
+      top: 0;
+      z-index: 2; }
+  .about-messaging .about-messaging_picture_scr-shot-before {
+    position: absolute;
+    top: 50px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s; }
+    .about-messaging .about-messaging_picture_scr-shot-before:hover {
+      top: 0;
+      left: -150px; } }

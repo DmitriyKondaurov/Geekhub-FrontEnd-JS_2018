@@ -9,7 +9,7 @@
 
     .footer_nav_list {
       list-style: none;
-      width: 585px;
+      max-width: 585px;
       height: 100px;
       margin: 0;
       display: flex;
@@ -53,13 +53,25 @@
 @media screen and ($xs) {
 
 }
+
 @media screen and ($sm) {
 
 }
 
 @media screen and ($md) {
-
+  .footer {
+    .footer_nav {
+      .footer_nav_list {
+        padding: 0;
+        .footer_nav_item a {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
 }
+
+
 
 @media screen and ($lg) {
 
