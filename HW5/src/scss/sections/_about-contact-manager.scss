@@ -43,17 +43,6 @@
 }
 
 //________________________________________________________________________________
-@media screen and ($xs) {
-
-}
-
-@media screen and ($sm) {
-
-}
-
-@media screen and ($md) {
-
-}
 
 @media screen and (max-width: 1400px) {
   .about-contacts-manager-wrapper {
@@ -63,8 +52,26 @@
       flex-basis: 350px;
     }
     .about-contacts-manager_picture {
+      width: 557px;
       align-self: center;
+    }
+    .about-contacts-manager_picture_scr-shot-behind {
+      margin: 0 0 0 -140px;
+      &:hover {
+        margin: -80px;
+      }
     }
   }
 }
 
+@media screen and ($md) {
+
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($xs) {
+
+}

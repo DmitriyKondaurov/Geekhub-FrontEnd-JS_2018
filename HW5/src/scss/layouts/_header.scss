@@ -47,19 +47,7 @@
 
 
 }
-
-@media screen and ($xs) {
-
-}
-
-@media screen and ($sm) {
-
-}
-
-@media screen and ($md) {
-
-}
-
+//_______________________________________________
 @media screen and ($lg) {
   .header {
     max-width: 100%;
@@ -68,3 +56,21 @@
     }
   }
 }
+
+@media screen and ($md) {
+  .header {
+    height: 100px;
+    .header_wrapper {
+      height: 120px;
+    }
+  }
+}
+
+@media screen and ($sm) {
+
+}
+
+@media screen and ($xs) {
+
+}
+

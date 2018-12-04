@@ -39,10 +39,6 @@
     @include text($color: $sec-text-color, $align: center, $decoration: none, $indent: 0, $transform: uppercase);
   }
 
-  .dropdown-menu {
-    width: 200px;
-  }
-
   .show button {
     color: #fff;
     background-color: inherit;
@@ -50,11 +46,9 @@
   }
 }
 
-@media screen and ($xs) {
+//___________________________________________
 
-}
-
-@media screen and ($sm) {
+@media screen and ($lg) {
 
 }
 
@@ -71,8 +65,36 @@
   }
 }
 
+@media screen and ($sm) {
+  .footer {
+    .footer_lang-switch-list {
+      width: 150px;
+    }
+    .footer_nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
+      .footer_nav_list {
+        list-style: none;
+        max-width: 585px;
+        height: 100px;
+        margin: 0;
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
 
-@media screen and ($lg) {
+        .footer_nav_item a {
+          @include font(400, 18px, 100px, 'Lato');
+          @include text($color: $sec-text-color, $align: center, $decoration: none, $indent: 0, $transform: uppercase);
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and ($xs) {
 
 }
+

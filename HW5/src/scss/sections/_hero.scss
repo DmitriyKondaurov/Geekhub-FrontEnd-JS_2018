@@ -107,14 +107,20 @@
   .toggle_mnu {
     display: none;
   }
+  .hero {
+    .clip-path-block {
+      height: 90vh;
+      padding-top: 170px;
+    }
+  }
 
 }
 
 @media screen and ($xs) {
   .hero {
     .clip-path-block {
-      //height: 650px;
-
+      height: 90vh;
+      padding-top: 70px;
     }
     .call-to-action-btn {
       margin: 55px 0 0 20px;
