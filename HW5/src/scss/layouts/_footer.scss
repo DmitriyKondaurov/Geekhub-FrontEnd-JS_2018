@@ -2,31 +2,31 @@
   max-width: 1600px;
   margin: auto;
 
-  .footer_nav {
+  .footer-wrapper {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    .footer_nav_list {
-      list-style: none;
-      max-width: 585px;
-      height: 100px;
-      margin: 0;
-      display: flex;
-      justify-content: stretch;
-      align-items: stretch;
-
-      .footer_nav_item a {
-        @include font(400, 18px, 100px, 'Lato');
-        @include text($color: $sec-text-color, $align: center, $decoration: none, $indent: 0, $transform: uppercase);
-        display: block;
-        padding: 0 25px;
-        &:hover {
-          color: #fff;
-          background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
-        }
-      }
+  }
+  .footer_nav_list {
+    list-style: none;
+    max-width: 585px;
+    height: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+  .footer_nav_item a {
+    @include font(400, 18px, 100px, 'Lato');
+    @include text($color: $sec-text-color, $align: center, $decoration: none, $indent: 0, $transform: uppercase);
+    display: block;
+    padding: 0 25px;
+    &:hover {
+      color: #fff;
+      background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
     }
+
   }
 
   .footer_lang-switch-list {
@@ -35,7 +35,7 @@
     border-radius: 25px;
     background-color: #f8f8f8;
     border: none;
-    @include font(400, 18px, 1.56, 'Lato');
+    @include font(400, 18px, 20px, 'Lato');
     @include text($color: $sec-text-color, $align: center, $decoration: none, $indent: 0, $transform: uppercase);
   }
 
@@ -54,7 +54,7 @@
 
 @media screen and ($md) {
   .footer {
-    .footer_nav {
+    .footer-wrapper {
       .footer_nav_list {
         padding: 0;
         .footer_nav_item a {
@@ -70,31 +70,32 @@
     .footer_lang-switch-list {
       width: 150px;
     }
+
     .footer_nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
       .footer_nav_list {
-        list-style: none;
         max-width: 585px;
-        height: 100px;
-        margin: 0;
-        display: flex;
-        justify-content: stretch;
-        align-items: stretch;
-
         .footer_nav_item a {
           @include font(400, 18px, 100px, 'Lato');
           @include text($color: $sec-text-color, $align: center, $decoration: none, $indent: 0, $transform: uppercase);
-          display: block;
         }
       }
+    }
+
+    .footer-wrapper {
+      height: 80px;
     }
   }
 }
 
 @media screen and ($xs) {
-
+  .footer {
+    .footer_lang-switch-list {
+      width: 25vw;
+      font-size: 3vw;
+    }
+    .footer_lang-switch-item {
+      width: 25vw;
+    }
+  }
 }
 

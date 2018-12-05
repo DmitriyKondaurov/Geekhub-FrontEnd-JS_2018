@@ -16,7 +16,7 @@
 
 $w: 54px;
 $h: 6px;
-#sandwich {
+#sandwich, #footer-sandwich {
   width: $w;
   height: $w;
   position: absolute;
@@ -67,7 +67,7 @@ $h: 6px;
 }
 
 
-#sandwich.active {
+#sandwich.active, #footer-sandwich.active {
   .sw-topper {
     top: 18px;
     transform: rotate(140deg);
@@ -83,9 +83,19 @@ $h: 6px;
   }
 }
 
-.top-mnu {
+.top-mnu, .foot-mnu {
   display: inline-block;
+  height: 100%;
 }
+
+.top-nav {
+  align-self: stretch;
+}
+
+.footer-nav {
+  align-self: flex-end;
+}
+
 
 .top-nav_list {
   display: flex;
@@ -98,7 +108,7 @@ $h: 6px;
   @include text($color: #fff, $align: center, $decoration: none, $indent: 0, $transform: uppercase);
 }
 
-.top-nav_item {
+.top-nav_item, .footer_nav_item {
   flex-grow: 1;
   height: 100%;
   display: flex;
@@ -130,29 +140,54 @@ $h: 6px;
 }
 
 @media screen and ($sm) {
-  .header {
-    .toggle-mnu-btn {
-      display: inline-block;
-    }
-    .top-mnu {
-      display: none;
-      position: absolute;
-      right: 0;
-    }
+  .toggle-mnu-btn {
+    display: inline-block;
+  }
 
-    .top-nav_list {
-      width: 360px;
-      height: 300px;
-      flex-flow: column;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.5);
-      @include font(400, 18px, 75px, 'Lato');
+  .foot-mnu{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 400px;
+  }
 
+  .top-mnu {
+    display: none;
+    position: absolute;
+    right: 0;
+  }
+
+  .top-nav_list {
+    width: 360px;
+    height: 300px;
+    flex-flow: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    @include font(400, 18px, 75px, 'Lato');
+
+  }
+
+  .footer .foot-mnu .footer_nav_list {
+    width: 360px;
+    height: 400px;
+    flex-flow: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    @include font(400, 18px, 100px, 'Lato');
+    color: #fff;
+    
+    .footer_nav_item a {
+      color: #fff;
     }
   }
 }
-@media screen and ($md) {
 
+
+@media screen and ($md) {
+  .top-nav_list {
+    line-height: 75px;
+  }
 }
 
 @media screen and ($lg) {
