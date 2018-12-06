@@ -1,24 +1,22 @@
-"name": "HW_Js#1",
-"version": "1.0.0",
-"description": "Geek hub home work Js#1",
-"main": "index.js",
-"scripts": {
-"test": "echo \"Error: no test specified\" && exit 1"
-},
-"repository": {
-"type": "git",
-"url": "git+ssh://git@github.com/DmitriyKondaurov/Geekhub-FrontEnd-JS_2018.git"
-},
-"author": "Dmytro Kondaurov",
-"license": "MIT",
-"bugs": {
-"url": "https://github.com/DmitriyKondaurov/Geekhub-FrontEnd-JS_2018/issues"
-},
-"homepage": "https://github.com/DmitriyKondaurov/Geekhub-FrontEnd-JS_2018#readme",
-"devDependencies": {
-
-},
-"dependencies": {
-
-}
+{
+  "name": "hw_js1",
+  "version": "1.0.0",
+  "description": "Geek hub home work Js#1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DmitriyKondaurov/Geekhub-FrontEnd-JS_2018.git"
+  },
+  "author": "Dmytro Kondaurov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DmitriyKondaurov/Geekhub-FrontEnd-JS_2018/issues"
+  },
+  "homepage": "https://github.com/DmitriyKondaurov/Geekhub-FrontEnd-JS_2018#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }
