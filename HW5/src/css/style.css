@@ -8497,13 +8497,14 @@ body {
     display: none; }
   .hero .clip-path-block {
     height: 90vh;
-    padding-top: 170px; } }
+    padding-top: 50px; } }
 
 @media screen and (max-width: 576px) {
   .hero .clip-path-block {
     height: 90vh;
-    padding-top: 0; }
+    padding-top: 20px; }
   .hero .call-to-action-btn {
+    width: 160px;
     margin: 55px 0 0 20px; }
   .hero .slogan {
     font-weight: 900;
@@ -8621,6 +8622,16 @@ body {
       .features .features-screencast .play-screencast-icon:hover {
         background: rgba(2, 246, 30, 0.9) url(../img/play-circle.png) center center no-repeat; }
 
+@media screen and (max-width: 1070px) {
+  .features .features-screencast {
+    display: none; } }
+
+@media screen and (max-width: 992px) {
+  .features .features-list {
+    height: auto; }
+    .features .features-list .features-item {
+      margin: 40px; } }
+
 @media screen and (max-width: 865px) {
   .features {
     margin: 50px 0;
@@ -8640,15 +8651,14 @@ body {
           -ms-flex-pack: center;
               justify-content: center; } }
 
-@media screen and (max-width: 992px) {
-  .features .features-list {
-    height: auto; }
-    .features .features-list .features-item {
-      margin: 40px; } }
-
-@media screen and (max-width: 1070px) {
-  .features .features-screencast {
-    display: none; } }
+@media screen and (max-width: 576px) {
+  .features .features-list .features-item:nth-child(odd)::before {
+    top: -50px;
+    right: 0; }
+  .features .features-list .features-item:nth-child(even)::before {
+    position: absolute;
+    left: 0;
+    top: -50px; } }
 
 .testimonials {
   max-width: 1170px;
@@ -8826,6 +8836,13 @@ body {
     .download .download_btn:hover {
       background: #df1c3c url(../img/Layer_2.png) center no-repeat; }
 
+@media screen and (max-width: 576px) {
+  .download .download-caption {
+    font-weight: 900;
+    font-size: 38px;
+    font-family: "Lato";
+    line-height: 38px; } }
+
 .subscribe {
   text-align: center;
   border-bottom: 1px solid #e0e0e0;
@@ -8870,8 +8887,22 @@ body {
         color: #000; }
 
 @media screen and (max-width: 768px) {
+  .subscribe .subscribe_form {
+    padding: 50px 5px; }
+    .subscribe .subscribe_form .subscribe_email {
+      width: 300px;
+      padding: 0 0 0 5px; }
+    .subscribe .subscribe_form .subscribe_submit {
+      padding: 0 10px; } }
+
+@media screen and (max-width: 576px) {
+  .subscribe .subscribe_caption {
+    font-weight: 900;
+    font-size: 38px;
+    font-family: "Lato";
+    line-height: 38px; }
   .subscribe .subscribe_form .subscribe_email {
-    width: 300px; } }
+    width: 245px; } }
 
 .about-contacts-manager {
   border-bottom: 1px solid #e0e0e0; }

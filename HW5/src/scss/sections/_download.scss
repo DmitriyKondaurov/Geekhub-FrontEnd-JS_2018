@@ -28,7 +28,11 @@
 
 //________________________________________________________________________________
 @media screen and ($xs) {
-
+  .download {
+    .download-caption {
+      @include font(900, 38px, 38px, 'Lato');
+    }
+  }
 }
 
 @media screen and ($sm) {

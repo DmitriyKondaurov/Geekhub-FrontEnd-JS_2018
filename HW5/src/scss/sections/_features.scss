@@ -91,19 +91,14 @@
 }
 
 //________________________________________________________________________________
-@media screen and ($xs) {
 
-}
 
-@media screen and (max-width: 865px) {
+
+
+@media screen and (max-width: 1070px) {
   .features {
-    margin: 50px 0;
-    flex-flow: column;
-    flex-wrap: nowrap;
-    .features-list {
-      max-width: 580px;
-      margin: auto;
-      justify-content: center;
+    .features-screencast {
+      display: none;
     }
   }
 }
@@ -119,11 +114,33 @@
   }
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 865px) {
   .features {
-    .features-screencast {
-      display: none;
+    margin: 50px 0;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    .features-list {
+      max-width: 580px;
+      margin: auto;
+      justify-content: center;
     }
   }
 }
 
+@media screen and ($xs) {
+  .features {
+    .features-list {
+      .features-item {
+        &:nth-child(odd)::before {
+          top: -50px;
+          right: 0;
+        }
+        &:nth-child(even)::before {
+          position: absolute;
+          left: 0;
+          top: -50px;
+        }
+      }
+    }
+  }
+}
