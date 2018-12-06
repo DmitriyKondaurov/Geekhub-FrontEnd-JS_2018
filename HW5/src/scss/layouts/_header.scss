@@ -37,10 +37,8 @@
     }
   }
 
-
-
-
 }
+
 //_______________________________________________
 @media screen and ($lg) {
   .header {
@@ -55,13 +53,22 @@
   .header {
     height: 100px;
     .header_wrapper {
-      height: 100px;
+      max-height: 100px;
     }
   }
 }
 
 @media screen and ($sm) {
+  .header {
+    .header_wrapper {
+      max-height: 65px;
+    }
+    height: 65px;
+    .logo-company {
 
+      @include font(900, 38px, 38px, 'Lato');
+    }
+  }
 }
 
 @media screen and ($xs) {

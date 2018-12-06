@@ -8054,7 +8054,18 @@ body {
   .header {
     height: 100px; }
     .header .header_wrapper {
-      height: 100px; } }
+      max-height: 100px; } }
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 65px; }
+    .header .header_wrapper {
+      max-height: 65px; }
+    .header .logo-company {
+      font-weight: 900;
+      font-size: 38px;
+      font-family: "Lato";
+      line-height: 38px; } }
 
 .toggle-mnu-btn {
   position: relative;
@@ -8491,9 +8502,19 @@ body {
 @media screen and (max-width: 576px) {
   .hero .clip-path-block {
     height: 90vh;
-    padding-top: 70px; }
+    padding-top: 0; }
   .hero .call-to-action-btn {
-    margin: 55px 0 0 20px; } }
+    margin: 55px 0 0 20px; }
+  .hero .slogan {
+    font-weight: 900;
+    font-size: 42px;
+    font-family: "Lato";
+    line-height: 42px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    color: #fff; } }
 
 .features {
   margin: 200px 0;
@@ -8763,6 +8784,21 @@ body {
     .testimonials .testimonials-list .testimonials-item {
       width: 360px; } }
 
+@media screen and (max-width: 576px) {
+  .testimonials {
+    margin: 50px auto; }
+    .testimonials .testimonials-caption {
+      font-weight: 900;
+      font-size: 38px;
+      font-family: "Lato";
+      line-height: 38px;
+      padding-bottom: 20px; }
+    .testimonials .testimonials-list .comment-text {
+      padding: 10px 10px 0 10px;
+      margin: 20px; }
+    .testimonials .testimonials-list .comment-author {
+      padding: 25px 0 0 15px; } }
+
 .download {
   text-align: center;
   padding: 70px 0 100px 0;
@@ -8902,12 +8938,12 @@ body {
         -ms-flex-direction: column;
             flex-direction: column; }
     .about-contacts-manager-wrapper .about-contacts-manager_explain {
-      width: 557px;
+      max-width: 557px;
       -webkit-flex-basis: 350px;
           -ms-flex-preferred-size: 350px;
               flex-basis: 350px; }
     .about-contacts-manager-wrapper .about-contacts-manager_picture {
-      width: 557px;
+      max-width: 557px;
       -webkit-align-self: center;
           -ms-flex-item-align: center;
               align-self: center; }
@@ -8915,6 +8951,25 @@ body {
       margin: 0 0 0 -140px; }
       .about-contacts-manager-wrapper .about-contacts-manager_picture_scr-shot-behind:hover {
         margin: -80px; } }
+
+@media screen and (max-width: 576px) {
+  .about-contacts-manager .about-contacts-manager_picture_scr-shot-before {
+    display: none; }
+  .about-contacts-manager .about-contacts-manager_picture_scr-shot-behind {
+    top: 0;
+    margin: 0; }
+    .about-contacts-manager .about-contacts-manager_picture_scr-shot-behind:hover {
+      top: 0;
+      margin: 0; }
+  .about-contacts-manager .explain_caption {
+    font-weight: 900;
+    font-size: 38px;
+    font-family: "Lato";
+    line-height: 38px;
+    text-align: center; }
+  .about-contacts-manager .explain_text {
+    padding: 10px;
+    text-align: center; } }
 
 .about-messaging {
   max-width: 1315px;
@@ -8987,7 +9042,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column; }
     .about-messaging .about-messaging_explain {
-      width: 557px;
+      max-width: 557px;
       -webkit-flex-basis: 350px;
           -ms-flex-preferred-size: 350px;
               flex-basis: 350px; }
@@ -9020,3 +9075,23 @@ body {
     .about-messaging .about-messaging_picture_scr-shot-before:hover {
       top: 0;
       left: -150px; } }
+
+@media screen and (max-width: 576px) {
+  .about-messaging .about-messaging_picture_scr-shot-behind {
+    display: none; }
+  .about-messaging .about-messaging_picture_scr-shot-before {
+    top: 50px;
+    left: 0;
+    width: 360px; }
+    .about-messaging .about-messaging_picture_scr-shot-before:hover {
+      top: 50px;
+      left: 0; }
+  .about-messaging .explain_caption {
+    font-weight: 900;
+    font-size: 38px;
+    font-family: "Lato";
+    line-height: 38px;
+    text-align: center; }
+  .about-messaging .explain_text {
+    padding: 10px;
+    text-align: center; } }

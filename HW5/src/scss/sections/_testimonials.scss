@@ -106,5 +106,19 @@
 }
 
 @media screen and ($xs) {
+  .testimonials {
+    margin: 50px auto;
 
+    .testimonials-caption {
+      @include font(900, 38px, 38px, 'Lato');
+      padding-bottom: 20px;
+    }
+    .testimonials-list .comment-text {
+      padding: 10px 10px 0 10px;
+      margin: 20px;
+    }
+    .testimonials-list .comment-author {
+      padding: 25px 0 0 15px;
+    }
+  }
 }

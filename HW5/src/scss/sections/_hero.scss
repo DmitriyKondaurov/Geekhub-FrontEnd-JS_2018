@@ -15,7 +15,7 @@
     @include text($color: #fff, $align: left, $decoration: none, $indent: 0, $transform: none);
   }
 
-  .hero_wrapper{
+  .hero_wrapper {
     max-width: 1250px;
     margin: auto;
     display: flex;
@@ -80,7 +80,7 @@
 
 @media screen and ($lg) {
   .hero {
-    .hero_wrapper{
+    .hero_wrapper {
       max-width: 1070px;
 
     }
@@ -120,10 +120,15 @@
   .hero {
     .clip-path-block {
       height: 90vh;
-      padding-top: 70px;
+      padding-top: 0;
     }
     .call-to-action-btn {
       margin: 55px 0 0 20px;
+    }
+
+    .slogan {
+      @include font(900, 42px, 42px, 'Lato');
+      @include text($color: #fff, $align: left, $decoration: none, $indent: 0, $transform: none);
     }
   }
 }
