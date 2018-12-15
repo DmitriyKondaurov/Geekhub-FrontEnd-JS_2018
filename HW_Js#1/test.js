@@ -204,10 +204,10 @@ test('test_compare_operators', () => {
 test('test_equality_comparison_algorithm', () => {
     expect(null != 0).toEqual(true);
     expect(false+true).toEqual(1);
-    expect(y /"2").toEqual(5);
+    expect(4 /"2").toEqual(2);
     expect(12 +'string' + 15).toEqual('12string15');
     expect('true' == true).toEqual(false);
     expect('false' === false ).toEqual(false);
-    expect(x == '5' ).toEqual(true);
+    expect(5 == '5' ).toEqual(true);
     expect('5k8=' + 'date').toEqual('5k8=date');
 });
