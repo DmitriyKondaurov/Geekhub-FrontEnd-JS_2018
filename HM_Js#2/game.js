@@ -1,20 +1,27 @@
 let direction = ['north', 'east', 'south', 'west'];
-let prevStep = '';
 let i = 0;
-while (i<200) {
-    let k = 0;
-    for (k = 0; k<direction.length; k++) {
-        while (isFree(direction[k])){
-            if (prevStep != direction[k]) {
-                step(k);
-                prevStep = direction[((k+2)%4)];
-            }
-            else break;
-        }
+let k = 0;
+while (i<121) {
+    if (isFree(direction[(k+3)%4])) {
+        k = (k+3)%4;
+        step(k);
         map();
+    }
+    else {
+        while (!(isFree(direction[(k+3)%4]))){
+            if (isFree(direction[k])) {
+                step(k);
+                map();
+            }
+            else {
+                k = (k+1)%4;
+                break;
+            }
+        }
     }
     i++;
 }
+
 function step(x) {
     switch (x) {
         case 0:
