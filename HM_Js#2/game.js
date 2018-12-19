@@ -5,13 +5,13 @@ while (i<121) {
     if (isFree(direction[(k+3)%4])) {
         k = (k+3)%4;
         step(k);
-        map();
+        // map();
     }
     else {
         while (!(isFree(direction[(k+3)%4]))){
             if (isFree(direction[k])) {
                 step(k);
-                map();
+                // map();
             }
             else {
                 k = (k+1)%4;
