@@ -43,7 +43,28 @@
 }
 
 //________________________________________________________________________________
-@media screen and ($xs) {
+
+@media screen and (max-width: 1400px) {
+  .about-contacts-manager-wrapper {
+    flex-direction: column;
+    .about-contacts-manager_explain {
+      max-width: 557px;
+      flex-basis: 350px;
+    }
+    .about-contacts-manager_picture {
+      max-width: 557px;
+      align-self: center;
+    }
+    .about-contacts-manager_picture_scr-shot-behind {
+      margin: 0 0 0 -140px;
+      &:hover {
+        margin: -80px;
+      }
+    }
+  }
+}
+
+@media screen and ($md) {
 
 }
 
@@ -51,10 +72,26 @@
 
 }
 
-@media screen and ($md) {
-
+@media screen and ($xs) {
+  .about-contacts-manager {
+    .about-contacts-manager_picture_scr-shot-before {
+      display: none;
+    }
+    .about-contacts-manager_picture_scr-shot-behind {
+      top: 0;
+      margin: 0;
+      &:hover {
+        top: 0;
+        margin: 0;
+      }
+    }
+    .explain_caption {
+      @include font(900, 38px, 38px, 'Lato');
+      text-align: center;
+    }
+    .explain_text {
+      padding: 10px;
+      text-align: center;
+    }
+  }
 }
-
-@media screen and ($lg) {
-}
-

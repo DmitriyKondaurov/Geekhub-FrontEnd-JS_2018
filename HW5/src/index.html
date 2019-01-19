@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>HeyU</title>
     <meta name="description" content="HeyU">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="img/icons/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="img/icons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="img/icons/favicon-96x96.png" sizes="96x96">
@@ -18,12 +19,21 @@
     <div class="header_wrapper">
         <h1 class="logo-company"><a href="#">HeyU</a></h1>
         <nav class="top-nav">
-            <ul class="top-nav_list">
-                <li class="top-nav_item"><a href="#">about</a></li>
-                <li class="top-nav_item"><a href="#">faq</a></li>
-                <li class="top-nav_item"><a href="#">support</a></li>
-                <li class="top-nav_item"><a href="#">blog</a></li>
-            </ul>
+            <div id="site-navigation" class="top-mnu" role="navigation">
+                <ul class="top-nav_list">
+                    <li class="top-nav_item"><a href="#">about</a></li>
+                    <li class="top-nav_item"><a href="#">faq</a></li>
+                    <li class="top-nav_item"><a href="#">support</a></li>
+                    <li class="top-nav_item"><a href="#">blog</a></li>
+                </ul>
+            </div>
+            <div class="toggle-mnu-btn">
+                <div id="sandwich">
+                    <div class="sw-topper"></div>
+                    <div class="sw-bottom"></div>
+                    <div class="sw-footer"></div>
+                </div>
+            </div>
         </nav>
     </div>
 </header>
@@ -161,20 +171,30 @@
     <a class="download_btn" href="https://www.apple.com/ios/app-store/">Download from App Store</a>
 </section>
 <footer class="footer">
-    <nav class="footer_nav">
-        <ul class="footer_nav_list">
-            <li class="footer_nav_item"><a href="#">about</a></li>
-            <li class="footer_nav_item"><a href="#">faq</a></li>
-            <li class="footer_nav_item"><a href="#">support</a></li>
-            <li class="footer_nav_item"><a href="#">blog</a></li>
-            <li class="footer_nav_item"><a href="#">download</a></li>
-        </ul>
+    <nav class="footer-wrapper">
+        <div class="footer-nav">
+            <div id="footer-navigation" class="foot-mnu" role="navigation">
+                <ul class="footer_nav_list">
+                    <li class="footer_nav_item"><a href="#">about</a></li>
+                    <li class="footer_nav_item"><a href="#">faq</a></li>
+                    <li class="footer_nav_item"><a href="#">support</a></li>
+                    <li class="footer_nav_item"><a href="#">blog</a></li>
+                </ul>
+            </div>
+            <div class="toggle-mnu-btn">
+                <div id="footer-sandwich">
+                    <div class="sw-topper"></div>
+                    <div class="sw-bottom"></div>
+                    <div class="sw-footer"></div>
+                </div>
+            </div>
+        </div>
         <div class="dropdown">
             <button class="footer_lang-switch-list btn btn-secondary dropdown-toggle" type="button"
                     data-toggle="dropdown" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
                 english <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu footer_lang-switch-item" aria-labelledby="dropdownMenuButton">
+            <ul class="dropdown-menu dropdown-menu-right footer_lang-switch-item" aria-labelledby="dropdownMenuButton">
                 <li class="dropdown-item"><a class="footer_lang-switch-item" href="#">english</a></li>
                 <li class="dropdown-item"><a class="footer_lang-switch-item" href="#">russian</a></li>
                 <li class="dropdown-item"><a class="footer_lang-switch-item" href="#">ukrainian</a></li>

@@ -3,7 +3,6 @@
   border-bottom: 1px solid #e0e0e0;
   padding: 0 0 100px 0;
 
-
   .subscribe_caption {
     @include font(900, 57px, 57px, 'Lato');
     @include text($color: $sec-text-color, $align: center, $decoration: none, $indent: 0, $transform: none);
@@ -12,13 +11,13 @@
 
   .subscribe_form {
     padding: 50px;
-    
+
     .subscribe_email {
       height: 50px;
       width: 380px;
       padding: 0 30px;
       border-radius: 25px;
-      border: none ;
+      border: none;
       background-color: #f8f8f8;
     }
 
@@ -28,7 +27,7 @@
       left: -50px;
       padding: 0 50px;
       border-radius: 25px;
-      border: none ;
+      border: none;
       color: #fff;
       background-image: linear-gradient(to top, #eb402c 0%, #d90647 100%);
 
@@ -41,11 +40,8 @@
 }
 
 //________________________________________________________________________________
-@media screen and ($xs) {
 
-}
-
-@media screen and ($sm) {
+@media screen and ($lg) {
 
 }
 
@@ -53,6 +49,29 @@
 
 }
 
-@media screen and ($lg) {
+@media screen and ($sm) {
+  .subscribe {
+    .subscribe_form {
+      padding: 50px 5px;
+      .subscribe_email {
+        width: 300px;
+        padding: 0 0 0 5px;
+      }
+      .subscribe_submit {
+         padding: 0 10px;
+       }
+    }
+  }
 }
 
+@media screen and ($xs) {
+  .subscribe {
+
+    .subscribe_caption {
+      @include font(900, 38px, 38px, 'Lato');
+    }
+    .subscribe_form .subscribe_email {
+      width: 245px;
+    }
+  }
+}

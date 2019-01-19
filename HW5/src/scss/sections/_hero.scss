@@ -15,7 +15,7 @@
     @include text($color: #fff, $align: left, $decoration: none, $indent: 0, $transform: none);
   }
 
-  .hero_wrapper{
+  .hero_wrapper {
     max-width: 1250px;
     margin: auto;
     display: flex;
@@ -75,20 +75,61 @@
     right: 0;
   }
 }
+
 //________________________________________________________________________________
-@media screen and ($xs) {
 
-}
+@media screen and ($lg) {
+  .hero {
+    .hero_wrapper {
+      max-width: 1070px;
 
-@media screen and ($sm) {
-
+    }
+  }
 }
 
 @media screen and ($md) {
+  .hero {
+    .clip-path-block {
+      height: 100vh;
+      padding-top: 70px;
+    }
+  }
+
+  .hero_block-img {
+    .preview-img {
+      width: 40%;
+      bottom: -40px;
+    }
+  }
+}
+
+@media screen and ($sm) {
+  .toggle_mnu {
+    display: none;
+  }
+  .hero {
+    .clip-path-block {
+      height: 90vh;
+      padding-top: 50px;
+    }
+  }
 
 }
 
-@media screen and ($lg) {
+@media screen and ($xs) {
+  .hero {
+    .clip-path-block {
+      height: 90vh;
+      padding-top: 20px;
+    }
+    .call-to-action-btn {
+      width: 160px;
+      margin: 55px 0 0 20px;
+    }
 
+    .slogan {
+      @include font(900, 42px, 42px, 'Lato');
+      @include text($color: #fff, $align: left, $decoration: none, $indent: 0, $transform: none);
+    }
+  }
 }
-

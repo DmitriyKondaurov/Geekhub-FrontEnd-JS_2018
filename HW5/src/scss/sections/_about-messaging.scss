@@ -43,20 +43,80 @@
     }
   }
 }
+
 //________________________________________________________________________________
-@media screen and ($xs) {
 
-}
-
-@media screen and ($sm) {
-
+@media screen and (max-width: 1400px) {
+  .about-messaging {
+    flex-direction: column;
+    .about-messaging_explain {
+      max-width: 557px;
+      flex-basis: 350px;
+    }
+    .about-messaging_picture {
+      align-self: flex-end;
+    }
+  }
 }
 
 @media screen and ($md) {
 
 }
 
-@media screen and ($lg) {
+@media screen and ($sm) {
+  .about-messaging {
 
+    .about-messaging_picture {
+      position: relative;
+      height: 600px;
+      width: 360px;
+    }
+
+    .about-messaging_picture_scr-shot-behind {
+      position: absolute;
+      top: -50px;
+      left: -25px;
+      transition: all 1s;
+      &:hover {
+        top: 0;
+        z-index: 2;
+      }
+    }
+
+    .about-messaging_picture_scr-shot-before {
+      position: absolute;
+      top: 50px;
+      transition: all 1s;
+      &:hover {
+        top: 0;
+        left: -150px;
+      }
+    }
+  }
 }
 
+@media screen and ($xs) {
+  .about-messaging {
+    .about-messaging_picture_scr-shot-behind {
+      display: none;
+    }
+
+    .about-messaging_picture_scr-shot-before {
+      top: 50px;
+      left: 0;
+      width: 360px;
+      &:hover {
+        top: 50px;
+        left: 0;
+      }
+    }
+    .explain_caption {
+      @include font(900, 38px, 38px, 'Lato');
+      text-align: center;
+    }
+    .explain_text {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}

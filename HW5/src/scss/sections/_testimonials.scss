@@ -2,7 +2,6 @@
   max-width: 1170px;
   margin: 100px auto;
 
-
   .testimonials-caption {
     @include font(900, 57px, 57px, 'Lato');
     @include text($color: $sec-text-color, $align: center, $decoration: none, $indent: 0, $transform: none);
@@ -83,10 +82,22 @@
   }
 }
 
-
-
 //________________________________________________________________________________
-@media screen and ($xs) {
+
+@media screen and ($lg) {
+  .testimonials {
+
+    .testimonials-list {
+      flex-flow: column;
+
+      .testimonials-item {
+        width: 360px;
+      }
+    }
+  }
+}
+
+@media screen and ($md) {
 
 }
 
@@ -94,11 +105,20 @@
 
 }
 
-@media screen and ($md) {
+@media screen and ($xs) {
+  .testimonials {
+    margin: 50px auto;
 
+    .testimonials-caption {
+      @include font(900, 38px, 38px, 'Lato');
+      padding-bottom: 20px;
+    }
+    .testimonials-list .comment-text {
+      padding: 10px 10px 0 10px;
+      margin: 20px;
+    }
+    .testimonials-list .comment-author {
+      padding: 25px 0 0 15px;
+    }
+  }
 }
-
-@media screen and ($lg) {
-
-}
-
