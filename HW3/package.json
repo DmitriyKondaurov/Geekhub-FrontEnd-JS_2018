@@ -19,7 +19,7 @@
   "devDependencies": {
     "bower": "^1.8.4",
     "browser-sync": "^2.26.3",
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.2"
   },
   "dependencies": {
     "jquery": "^3.3.1",
